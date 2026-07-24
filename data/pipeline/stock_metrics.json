@@ -1,95 +1,92 @@
 {
-  "analysis_date": "2026-07-21",
-  "metrics": {
-    "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
-    },
-    "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
-      "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
-    },
-    "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
-    },
-    "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
-    },
-    "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
-    },
-    "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
-    },
-    "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
-      "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
-    },
-    "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
-      "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
-    },
-    "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
-    },
-    "BID": {
-      "return_30d": -12.3,
-      "return_full": -10.51,
-      "volatility": 1.4,
-      "trend": "down",
-      "volume_trend": 1.62,
-      "latest_close": 36.8,
-      "data_points": 22
-    }
+  "BID": {
+    "return_full": -12.82,
+    "return_30d": -12.39,
+    "volatility": 1.68,
+    "trend": "Giảm ↘",
+    "volume_trend": -35.22,
+    "latest_close": 35.85,
+    "data_points": 62
+  },
+  "FPT": {
+    "return_full": -11.86,
+    "return_30d": -11.63,
+    "volatility": 1.75,
+    "trend": "Giảm ↘",
+    "volume_trend": 2.12,
+    "latest_close": 64.6,
+    "data_points": 62
+  },
+  "HPG": {
+    "return_full": -16.6,
+    "return_30d": -11.16,
+    "volatility": 1.29,
+    "trend": "Giảm ↘",
+    "volume_trend": 35.33,
+    "latest_close": 20.7,
+    "data_points": 62
+  },
+  "MBB": {
+    "return_full": -11.94,
+    "return_30d": -6.09,
+    "volatility": 1.14,
+    "trend": "Giảm ↘",
+    "volume_trend": 6.61,
+    "latest_close": 22.35,
+    "data_points": 62
+  },
+  "MSN": {
+    "return_full": -18.29,
+    "return_30d": -10.0,
+    "volatility": 1.39,
+    "trend": "Giảm ↘",
+    "volume_trend": 5.05,
+    "latest_close": 63.9,
+    "data_points": 62
+  },
+  "TCB": {
+    "return_full": -11.07,
+    "return_30d": -6.0,
+    "volatility": 1.52,
+    "trend": "Giảm ↘",
+    "volume_trend": 1.35,
+    "latest_close": 29.0,
+    "data_points": 62
+  },
+  "VCB": {
+    "return_full": -13.93,
+    "return_30d": -12.26,
+    "volatility": 1.33,
+    "trend": "Giảm ↘",
+    "volume_trend": -28.46,
+    "latest_close": 54.05,
+    "data_points": 62
+  },
+  "VHM": {
+    "return_full": -11.56,
+    "return_30d": -8.8,
+    "volatility": 3.24,
+    "trend": "Giảm ↘",
+    "volume_trend": -20.1,
+    "latest_close": 126.9,
+    "data_points": 62
+  },
+  "VIC": {
+    "return_full": -5.78,
+    "return_30d": 3.11,
+    "volatility": 2.62,
+    "trend": "Giảm ↘",
+    "volume_trend": 3.28,
+    "latest_close": 202.1,
+    "data_points": 62
+  },
+  "VNM": {
+    "return_full": -1.55,
+    "return_30d": 3.11,
+    "volatility": 1.03,
+    "trend": "Giảm ↘",
+    "volume_trend": 56.54,
+    "latest_close": 59.1,
+    "data_points": 62
   }
 }
