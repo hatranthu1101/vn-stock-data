@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VN Stock Daily Briefing</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a73e8;
+            font-size: 28px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #1a73e8;
+            padding-bottom: 10px;
+        }
+        .date {
+            color: #999;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-top: 30px;
+        }
+        .section h2 {
+            font-size: 18px;
+            color: #1a73e8;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+        th {
+            background: #f0f7ff;
+            color: #1a73e8;
+            padding: 10px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #1a73e8;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        tr:hover { background: #f9f9f9; }
+        .up { color: #0d7d2e; font-weight: 600; }
+        .down { color: #d33b27; font-weight: 600; }
+        .neutral { color: #666; }
+        .pick {
+            margin-bottom: 15px;
+            padding: 12px 15px;
+            background: #f0f7ff;
+            border-left: 4px solid #1a73e8;
+            border-radius: 4px;
+        }
+        .pick-ticker {
+            font-weight: 600;
+            font-size: 15px;
+            color: #1a73e8;
+            margin-bottom: 5px;
+        }
+        .pick-reason {
+            color: #555;
+            font-size: 13px;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📈 VN Stock Daily Briefing</h1>
+        <div class="date">04/08/2026 15:55 • Data: 2026-08-03</div>
+        
+        <div class="section">
+            <h2>🎯 Top picks hôm nay</h2>
+            <div class="pick">
+                <div class="pick-ticker">✅ VNM</div>
+                <div class="pick-reason">
+                    • Mã mạnh nhất trong danh sách với return +9.0% trong 30 ngày qua.<br>                    • Trend tăng rõ ràng cùng volatility thấp (1.1%), tỷ suất rủi ro/lợi nhuận tốt.<br>                    • Khuyến nghị: Xem xét mua hoặc giữ vị trí nếu đang nắm giữ.                </div>
+            </div>
+            <div class="pick">
+                <div class="pick-ticker">✅ VCB</div>
+                <div class="pick-reason">
+                    • Return 30D: -0.7%, Volatility: 1.5%<br>                    • Trend: → Sideway<br>                    • Risk-adjusted score tốt.                </div>
+            </div>
+            <div class="pick">
+                <div class="pick-ticker">✅ MBB</div>
+                <div class="pick-reason">
+                    • Return 30D: -1.4%, Volatility: 1.4%<br>                    • Trend: → Sideway<br>                    • Risk-adjusted score tốt.                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📊 Bảng tóm tắt 10 mã</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã</th>
+                        <th>Return 30D</th>
+                        <th>Volatility</th>
+                        <th>Trend</th>
+                        <th>Khuyến nghị</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>VNM</strong></td>
+                        <td class="up">+9.0%</td>
+                        <td>1.1%</td>
+                        <td>↑ Tăng</td>
+                        <td>✅ Nên xem xét: return +9.0%, volatility thấp, trend tăng</td>
+                    </tr>
+                    <tr>
+                        <td><strong>VCB</strong></td>
+                        <td class="down">-0.7%</td>
+                        <td>1.5%</td>
+                        <td>→ Sideway</td>
+                        <td>✅ Nên xem xét: volatility thấp</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MBB</strong></td>
+                        <td class="down">-1.4%</td>
+                        <td>1.4%</td>
+                        <td>→ Sideway</td>
+                        <td>✅ Nên xem xét: volatility thấp</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FPT</strong></td>
+                        <td class="down">-1.8%</td>
+                        <td>2.0%</td>
+                        <td>→ Sideway</td>
+                        <td>⚠️ Theo dõi thêm: → Sideway</td>
+                    </tr>
+                    <tr>
+                        <td><strong>HPG</strong></td>
+                        <td class="down">-2.4%</td>
+                        <td>1.5%</td>
+                        <td>↓ Giảm</td>
+                        <td>⚠️ Theo dõi thêm: ↓ Giảm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>MSN</strong></td>
+                        <td class="down">-3.3%</td>
+                        <td>1.5%</td>
+                        <td>↓ Giảm</td>
+                        <td>⚠️ Theo dõi thêm: ↓ Giảm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>VIC</strong></td>
+                        <td class="down">-3.3%</td>
+                        <td>2.6%</td>
+                        <td>↓ Giảm</td>
+                        <td>⚠️ Theo dõi thêm: ↓ Giảm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>VHM</strong></td>
+                        <td class="down">-4.0%</td>
+                        <td>3.3%</td>
+                        <td>↓ Giảm</td>
+                        <td>❌ Tránh / chờ: ↓ Giảm, return -4.0%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>BID</strong></td>
+                        <td class="down">-6.4%</td>
+                        <td>1.8%</td>
+                        <td>↓ Giảm</td>
+                        <td>❌ Tránh / chờ: ↓ Giảm, return -6.4%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TCB</strong></td>
+                        <td class="down">-11.3%</td>
+                        <td>1.6%</td>
+                        <td>↓ Giảm</td>
+                        <td>❌ Tránh / chờ: ↓ Giảm, return -11.3%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>📈 Nhận xét chung</h2>
+            <ul style="margin-left: 20px;">
+                <li>VNM là mã dẫn đầu với lợi suất +9% và trend tăng rõ ràng.</li>
+                <li>Nhóm VCB, MBB, FPT ổn định nhưng chưa có tín hiệu mạnh mẽ — chờ breakout hoặc theo dõi.</li>
+                <li>Các mã TCB, BID, VHM đang trong điều chỉnh — tránh hoặc chờ support.</li>
+                <li>Thị trường chung có xu hướng giảm (8 trong 10 mã down) — quản lý rủi ro kỹ lưỡng.</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            Báo cáo được tạo tự động. Không phải tư vấn đầu tư. Dữ liệu từ {metrics[list(metrics.keys())[0]]['latest_date']}.
+        </div>
+    </div>
+</body>
+</html>

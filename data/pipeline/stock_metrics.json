@@ -1,95 +1,92 @@
 {
-  "analysis_date": "2026-07-21",
-  "metrics": {
-    "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
-    },
-    "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
-      "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
-    },
-    "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
-    },
-    "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
-    },
-    "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
-    },
-    "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
-    },
-    "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
-      "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
-    },
-    "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
-      "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
-    },
-    "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
-    },
-    "BID": {
-      "return_30d": -12.3,
-      "return_full": -10.51,
-      "volatility": 1.4,
-      "trend": "down",
-      "volume_trend": 1.62,
-      "latest_close": 36.8,
-      "data_points": 22
-    }
+  "VCB": {
+    "return_full": -3.18,
+    "return_30d": -0.65,
+    "volatility": 1.51,
+    "trend": "→ Sideway",
+    "vol_trend_pct": 1.74,
+    "latest_close": 60.8,
+    "latest_date": "2026-08-03"
+  },
+  "VIC": {
+    "return_full": -0.7,
+    "return_30d": -3.31,
+    "volatility": 2.62,
+    "trend": "↓ Giảm",
+    "vol_trend_pct": 12.64,
+    "latest_close": 213.0,
+    "latest_date": "2026-08-03"
+  },
+  "VHM": {
+    "return_full": 3.14,
+    "return_30d": -3.96,
+    "volatility": 3.28,
+    "trend": "↓ Giảm",
+    "vol_trend_pct": -4.5,
+    "latest_close": 148.0,
+    "latest_date": "2026-08-03"
+  },
+  "HPG": {
+    "return_full": -9.15,
+    "return_30d": -2.38,
+    "volatility": 1.47,
+    "trend": "↓ Giảm",
+    "vol_trend_pct": 33.08,
+    "latest_close": 22.55,
+    "latest_date": "2026-08-03"
+  },
+  "TCB": {
+    "return_full": -8.16,
+    "return_30d": -11.26,
+    "volatility": 1.6,
+    "trend": "↓ Giảm",
+    "vol_trend_pct": 2.62,
+    "latest_close": 29.95,
+    "latest_date": "2026-08-03"
+  },
+  "MBB": {
+    "return_full": -5.44,
+    "return_30d": -1.36,
+    "volatility": 1.42,
+    "trend": "→ Sideway",
+    "vol_trend_pct": 2.63,
+    "latest_close": 24.0,
+    "latest_date": "2026-08-03"
+  },
+  "VNM": {
+    "return_full": 0.45,
+    "return_30d": 9.04,
+    "volatility": 1.15,
+    "trend": "↑ Tăng",
+    "vol_trend_pct": 50.01,
+    "latest_close": 60.3,
+    "latest_date": "2026-08-03"
+  },
+  "FPT": {
+    "return_full": -2.17,
+    "return_30d": -1.78,
+    "volatility": 1.98,
+    "trend": "→ Sideway",
+    "vol_trend_pct": -19.07,
+    "latest_close": 71.7,
+    "latest_date": "2026-08-03"
+  },
+  "MSN": {
+    "return_full": -12.79,
+    "return_30d": -3.26,
+    "volatility": 1.5,
+    "trend": "↓ Giảm",
+    "vol_trend_pct": 4.42,
+    "latest_close": 68.2,
+    "latest_date": "2026-08-03"
+  },
+  "BID": {
+    "return_full": -6.98,
+    "return_30d": -6.41,
+    "volatility": 1.8,
+    "trend": "↓ Giảm",
+    "vol_trend_pct": -15.79,
+    "latest_close": 38.25,
+    "latest_date": "2026-08-03"
   }
 }
