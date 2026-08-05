@@ -1,95 +1,96 @@
 {
-  "analysis_date": "2026-07-21",
+  "latest_date": "2026-08-03",
+  "generated_at": "2026-08-05T12:24:07.273632",
   "metrics": {
-    "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
-    },
-    "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
-      "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
-    },
-    "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
-    },
-    "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
-    },
-    "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
-    },
-    "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
-    },
-    "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
-      "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
+    "BID": {
+      "return_full": -6.98,
+      "return_30d": -9.27,
+      "volatility": 1.79,
+      "trend": "↗ Tăng",
+      "vol_trend_ratio": -20.48,
+      "close_latest": 38.25,
+      "data_points": 70
     },
     "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
-      "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
+      "return_full": -2.17,
+      "return_30d": 1.27,
+      "volatility": 1.97,
+      "trend": "↗ Tăng",
+      "vol_trend_ratio": -21.89,
+      "close_latest": 71.7,
+      "data_points": 70
+    },
+    "HPG": {
+      "return_full": -9.15,
+      "return_30d": -3.22,
+      "volatility": 1.46,
+      "trend": "↗ Tăng",
+      "vol_trend_ratio": 25.11,
+      "close_latest": 22.55,
+      "data_points": 70
+    },
+    "MBB": {
+      "return_full": -5.44,
+      "return_30d": 0.63,
+      "volatility": 1.41,
+      "trend": "↗ Tăng",
+      "vol_trend_ratio": -1.45,
+      "close_latest": 24.0,
+      "data_points": 70
     },
     "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
+      "return_full": -12.79,
+      "return_30d": -4.62,
+      "volatility": 1.49,
+      "trend": "↗ Tăng",
+      "vol_trend_ratio": 0.65,
+      "close_latest": 68.2,
+      "data_points": 70
     },
-    "BID": {
-      "return_30d": -12.3,
-      "return_full": -10.51,
-      "volatility": 1.4,
-      "trend": "down",
-      "volume_trend": 1.62,
-      "latest_close": 36.8,
-      "data_points": 22
+    "TCB": {
+      "return_full": -8.16,
+      "return_30d": -6.55,
+      "volatility": 1.59,
+      "trend": "↗ Tăng",
+      "vol_trend_ratio": 0.67,
+      "close_latest": 29.95,
+      "data_points": 70
+    },
+    "VCB": {
+      "return_full": -3.18,
+      "return_30d": -0.82,
+      "volatility": 1.5,
+      "trend": "↗ Tăng",
+      "vol_trend_ratio": -7.13,
+      "close_latest": 60.8,
+      "data_points": 70
+    },
+    "VHM": {
+      "return_full": 3.14,
+      "return_30d": -1.48,
+      "volatility": 3.25,
+      "trend": "↗ Tăng",
+      "vol_trend_ratio": -10.26,
+      "close_latest": 148.0,
+      "data_points": 70
+    },
+    "VIC": {
+      "return_full": -0.7,
+      "return_30d": -6.99,
+      "volatility": 2.6,
+      "trend": "↘ Giảm",
+      "vol_trend_ratio": 7.01,
+      "close_latest": 213.0,
+      "data_points": 70
+    },
+    "VNM": {
+      "return_full": 0.45,
+      "return_30d": 6.63,
+      "volatility": 1.15,
+      "trend": "↗ Tăng",
+      "vol_trend_ratio": 44.89,
+      "close_latest": 60.3,
+      "data_points": 70
     }
   }
 }
