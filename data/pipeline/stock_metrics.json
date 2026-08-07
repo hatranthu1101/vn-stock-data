@@ -1,95 +1,92 @@
 {
-  "analysis_date": "2026-07-21",
-  "metrics": {
-    "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
-    },
-    "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
-      "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
-    },
-    "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
-    },
-    "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
-    },
-    "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
-    },
-    "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
-    },
-    "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
-      "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
-    },
-    "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
-      "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
-    },
-    "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
-    },
-    "BID": {
-      "return_30d": -12.3,
-      "return_full": -10.51,
-      "volatility": 1.4,
-      "trend": "down",
-      "volume_trend": 1.62,
-      "latest_close": 36.8,
-      "data_points": 22
-    }
+  "BID": {
+    "return_full": -7.83,
+    "return_30d": -7.94,
+    "volatility": 1.76,
+    "trend_slope": -0.0674,
+    "volume_trend": -17.22,
+    "last_close": 37.9,
+    "last_date": "2026-08-06"
+  },
+  "FPT": {
+    "return_full": -3.53,
+    "return_30d": -3.42,
+    "volatility": 1.95,
+    "trend_slope": -0.0931,
+    "volume_trend": -16.98,
+    "last_close": 70.7,
+    "last_date": "2026-08-06"
+  },
+  "HPG": {
+    "return_full": -11.97,
+    "return_30d": -5.41,
+    "volatility": 1.45,
+    "trend_slope": -0.0497,
+    "volume_trend": 25.42,
+    "last_close": 21.85,
+    "last_date": "2026-08-06"
+  },
+  "MBB": {
+    "return_full": -5.83,
+    "return_30d": -3.47,
+    "volatility": 1.42,
+    "trend_slope": -0.0248,
+    "volume_trend": -2.25,
+    "last_close": 23.9,
+    "last_date": "2026-08-06"
+  },
+  "MSN": {
+    "return_full": -14.96,
+    "return_30d": -3.06,
+    "volatility": 1.48,
+    "trend_slope": -0.1978,
+    "volume_trend": -11.56,
+    "last_close": 66.5,
+    "last_date": "2026-08-06"
+  },
+  "TCB": {
+    "return_full": -10.46,
+    "return_30d": -13.74,
+    "volatility": 1.58,
+    "trend_slope": -0.0471,
+    "volume_trend": 2.19,
+    "last_close": 29.2,
+    "last_date": "2026-08-06"
+  },
+  "VCB": {
+    "return_full": -6.05,
+    "return_30d": -3.75,
+    "volatility": 1.49,
+    "trend_slope": -0.0673,
+    "volume_trend": 3.48,
+    "last_close": 59.0,
+    "last_date": "2026-08-06"
+  },
+  "VHM": {
+    "return_full": -46.27,
+    "return_30d": -48.63,
+    "volatility": 6.73,
+    "trend_slope": -0.246,
+    "volume_trend": 50.03,
+    "last_close": 77.1,
+    "last_date": "2026-08-06"
+  },
+  "VIC": {
+    "return_full": 2.0,
+    "return_30d": -0.68,
+    "volatility": 2.58,
+    "trend_slope": 0.0042,
+    "volume_trend": 36.09,
+    "last_close": 218.8,
+    "last_date": "2026-08-06"
+  },
+  "VNM": {
+    "return_full": -1.72,
+    "return_30d": 7.08,
+    "volatility": 1.16,
+    "trend_slope": -0.0046,
+    "volume_trend": 46.89,
+    "last_close": 59.0,
+    "last_date": "2026-08-06"
   }
 }
