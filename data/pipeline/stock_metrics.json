@@ -1,95 +1,92 @@
 {
-  "analysis_date": "2026-07-21",
-  "metrics": {
-    "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
-    },
-    "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
-      "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
-    },
-    "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
-    },
-    "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
-    },
-    "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
-    },
-    "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
-    },
-    "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
-      "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
-    },
-    "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
-      "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
-    },
-    "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
-    },
-    "BID": {
-      "return_30d": -12.3,
-      "return_full": -10.51,
-      "volatility": 1.4,
-      "trend": "down",
-      "volume_trend": 1.62,
-      "latest_close": 36.8,
-      "data_points": 22
-    }
+  "BID": {
+    "Return30D": -5.49,
+    "FullReturn": -5.03,
+    "Volatility": 2.09,
+    "Trend": -0.33,
+    "VolumeTrend": 32.64,
+    "LastClose": 39.05,
+    "DataPoints": 23
+  },
+  "FPT": {
+    "Return30D": -1.8,
+    "FullReturn": -3.4,
+    "Volatility": 2.4,
+    "Trend": -0.06,
+    "VolumeTrend": -2.7,
+    "LastClose": 70.8,
+    "DataPoints": 23
+  },
+  "HPG": {
+    "Return30D": -5.17,
+    "FullReturn": -11.36,
+    "Volatility": 2.01,
+    "Trend": -0.19,
+    "VolumeTrend": -1.81,
+    "LastClose": 22.0,
+    "DataPoints": 23
+  },
+  "MBB": {
+    "Return30D": -3.4,
+    "FullReturn": -4.85,
+    "Volatility": 2.07,
+    "Trend": -0.2,
+    "VolumeTrend": -4.11,
+    "LastClose": 24.15,
+    "DataPoints": 23
+  },
+  "MSN": {
+    "Return30D": -2.32,
+    "FullReturn": -13.81,
+    "Volatility": 1.72,
+    "Trend": -0.1,
+    "VolumeTrend": -16.2,
+    "LastClose": 67.4,
+    "DataPoints": 23
+  },
+  "TCB": {
+    "Return30D": -12.0,
+    "FullReturn": -8.92,
+    "Volatility": 1.88,
+    "Trend": -0.57,
+    "VolumeTrend": 8.68,
+    "LastClose": 29.7,
+    "DataPoints": 23
+  },
+  "VCB": {
+    "Return30D": -3.08,
+    "FullReturn": -4.94,
+    "Volatility": 2.03,
+    "Trend": -0.12,
+    "VolumeTrend": 44.5,
+    "LastClose": 59.7,
+    "DataPoints": 23
+  },
+  "VHM": {
+    "Return30D": -51.33,
+    "FullReturn": -49.13,
+    "Volatility": 10.89,
+    "Trend": -1.31,
+    "VolumeTrend": 59.16,
+    "LastClose": 73.0,
+    "DataPoints": 23
+  },
+  "VIC": {
+    "Return30D": -2.58,
+    "FullReturn": 0.23,
+    "Volatility": 2.36,
+    "Trend": -0.1,
+    "VolumeTrend": 27.73,
+    "LastClose": 215.0,
+    "DataPoints": 23
+  },
+  "VNM": {
+    "Return30D": 11.31,
+    "FullReturn": 3.28,
+    "Volatility": 1.97,
+    "Trend": 0.43,
+    "VolumeTrend": 22.67,
+    "LastClose": 62.0,
+    "DataPoints": 23
   }
 }
