@@ -1,0 +1,170 @@
+{
+  "top_3": [
+    {
+      "ticker": "VNM",
+      "score": 11.77,
+      "return_30d": 12.09,
+      "volatility": 2.02,
+      "trend_slope": 0.2514,
+      "latest_close": 62.1
+    },
+    {
+      "ticker": "FPT",
+      "score": 5.12,
+      "return_30d": 1.84,
+      "volatility": 2.56,
+      "trend_slope": 0.1716,
+      "latest_close": 71.8
+    },
+    {
+      "ticker": "VCB",
+      "score": 2.84,
+      "return_30d": 2.38,
+      "volatility": 2.1,
+      "trend_slope": 0.084,
+      "latest_close": 60.3
+    }
+  ],
+  "mid": [
+    {
+      "ticker": "MSN",
+      "score": -0.12,
+      "return_30d": -0.29,
+      "volatility": 1.83,
+      "trend_slope": 0.0182,
+      "latest_close": 67.7
+    },
+    {
+      "ticker": "HPG",
+      "score": -0.89,
+      "return_30d": -1.34,
+      "volatility": 2.09,
+      "trend_slope": 0.0092,
+      "latest_close": 22.1
+    },
+    {
+      "ticker": "BID",
+      "score": -1.15,
+      "return_30d": 0.03,
+      "volatility": 2.17,
+      "trend_slope": -0.0172,
+      "latest_close": 39.5
+    },
+    {
+      "ticker": "TCB",
+      "score": -5.13,
+      "return_30d": -3.09,
+      "volatility": 2.37,
+      "trend_slope": -0.1062,
+      "latest_close": 31.35
+    }
+  ],
+  "bottom": [
+    {
+      "ticker": "MBB",
+      "score": -9.62,
+      "return_30d": -17.38,
+      "volatility": 4.26,
+      "trend_slope": -0.0462,
+      "latest_close": 20.2
+    },
+    {
+      "ticker": "VIC",
+      "score": -9.64,
+      "return_30d": -5.87,
+      "volatility": 2.6,
+      "trend_slope": -0.2171,
+      "latest_close": 208.5
+    },
+    {
+      "ticker": "VHM",
+      "score": -101.48,
+      "return_30d": -49.93,
+      "volatility": 11.71,
+      "trend_slope": -2.5999,
+      "latest_close": 71.6
+    }
+  ],
+  "all_ranked": [
+    {
+      "ticker": "VNM",
+      "score": 11.77,
+      "return_30d": 12.09,
+      "volatility": 2.02,
+      "trend_slope": 0.2514,
+      "latest_close": 62.1
+    },
+    {
+      "ticker": "FPT",
+      "score": 5.12,
+      "return_30d": 1.84,
+      "volatility": 2.56,
+      "trend_slope": 0.1716,
+      "latest_close": 71.8
+    },
+    {
+      "ticker": "VCB",
+      "score": 2.84,
+      "return_30d": 2.38,
+      "volatility": 2.1,
+      "trend_slope": 0.084,
+      "latest_close": 60.3
+    },
+    {
+      "ticker": "MSN",
+      "score": -0.12,
+      "return_30d": -0.29,
+      "volatility": 1.83,
+      "trend_slope": 0.0182,
+      "latest_close": 67.7
+    },
+    {
+      "ticker": "HPG",
+      "score": -0.89,
+      "return_30d": -1.34,
+      "volatility": 2.09,
+      "trend_slope": 0.0092,
+      "latest_close": 22.1
+    },
+    {
+      "ticker": "BID",
+      "score": -1.15,
+      "return_30d": 0.03,
+      "volatility": 2.17,
+      "trend_slope": -0.0172,
+      "latest_close": 39.5
+    },
+    {
+      "ticker": "TCB",
+      "score": -5.13,
+      "return_30d": -3.09,
+      "volatility": 2.37,
+      "trend_slope": -0.1062,
+      "latest_close": 31.35
+    },
+    {
+      "ticker": "MBB",
+      "score": -9.62,
+      "return_30d": -17.38,
+      "volatility": 4.26,
+      "trend_slope": -0.0462,
+      "latest_close": 20.2
+    },
+    {
+      "ticker": "VIC",
+      "score": -9.64,
+      "return_30d": -5.87,
+      "volatility": 2.6,
+      "trend_slope": -0.2171,
+      "latest_close": 208.5
+    },
+    {
+      "ticker": "VHM",
+      "score": -101.48,
+      "return_30d": -49.93,
+      "volatility": 11.71,
+      "trend_slope": -2.5999,
+      "latest_close": 71.6
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VN Stock Daily Briefing</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h1 { color: #1f2937; margin-bottom: 5px; font-size: 28px; }
+        .date { color: #6b7280; font-size: 13px; margin-bottom: 20px; }
+        .summary-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 25px; font-size: 13px; }
+        .summary-card { background: #f3f4f6; padding: 12px; border-radius: 6px; }
+        .summary-card .label { color: #6b7280; font-weight: 500; }
+        .summary-card .value { font-size: 18px; font-weight: 600; color: #1f2937; margin-top: 4px; }
+        h2 { color: #1f2937; font-size: 16px; margin: 20px 0 12px 0; border-bottom: 2px solid #e5e7eb; padding-bottom: 8px; }
+        .table-container { overflow-x: auto; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; font-size: 12px; }
+        th { background: #f3f4f6; color: #1f2937; padding: 10px 8px; text-align: left; font-weight: 600; border-bottom: 2px solid #d1d5db; }
+        td { padding: 8px; border-bottom: 1px solid #e5e7eb; }
+        tr:hover { background: #f9fafb; }
+        .ticker { font-weight: 600; color: #1f2937; }
+        .positive { color: #059669; font-weight: 500; }
+        .negative { color: #dc2626; font-weight: 500; }
+        .neutral { color: #6b7280; }
+        .badge { display: inline-block; padding: 3px 8px; border-radius: 12px; font-size: 11px; font-weight: 500; }
+        .badge-buy { background: #d1fae5; color: #065f46; }
+        .badge-watch { background: #fef3c7; color: #92400e; }
+        .badge-avoid { background: #fee2e2; color: #991b1b; }
+        .chart-container { position: relative; height: 300px; margin-bottom: 20px; }
+        .picks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+        .pick-card { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%); padding: 15px; border-radius: 6px; border-left: 4px solid #059669; }
+        .pick-card .ticker { color: #065f46; font-size: 16px; }
+        .pick-card .reason { font-size: 12px; color: #047857; margin-top: 6px; line-height: 1.4; }
+        .footer { font-size: 11px; color: #9ca3af; text-align: center; margin-top: 20px; border-top: 1px solid #e5e7eb; padding-top: 12px; }
+        @media print { body { background: white; padding: 0; } .container { box-shadow: none; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📈 VN Stock Daily Briefing</h1>
+        <div class="date">Ngày phân tích: 2026-08-11</div>
+        
+        <div class="summary-grid">
+            <div class="summary-card">
+                <div class="label">Mã được xem xét</div>
+                <div class="value">3 mã</div>
+            </div>
+            <div class="summary-card">
+                <div class="label">Dữ liệu đến</div>
+                <div class="value">2026-08-10</div>
+            </div>
+            <div class="summary-card">
+                <div class="label">Số mã theo dõi</div>
+                <div class="value">10 mã</div>
+            </div>
+            <div class="summary-card">
+                <div class="label">Thời gian</div>
+                <div class="value">30 ngày</div>
+            </div>
+        </div>
+
+        <h2>Top Picks Hôm Nay — 3 Mã Nên Xem Xét</h2>
+        <div class="picks">
+
+        <div class="pick-card">
+            <div class="ticker">VNM</div>
+            <div class="reason">Tăng mạnh 30 ngày, Rủi ro thấp, Xu hướng tăng</div>
+            <div style="margin-top: 8px; font-size: 11px; color: #047857;">Return 30D: <span class="positive">+12.09%</span></div>
+        </div>
+
+        <div class="pick-card">
+            <div class="ticker">FPT</div>
+            <div class="reason">Xu hướng tăng</div>
+            <div style="margin-top: 8px; font-size: 11px; color: #047857;">Return 30D: <span class="positive">+1.84%</span></div>
+        </div>
+
+        <div class="pick-card">
+            <div class="ticker">VCB</div>
+            <div class="reason">Rủi ro thấp</div>
+            <div style="margin-top: 8px; font-size: 11px; color: #047857;">Return 30D: <span class="positive">+2.38%</span></div>
+        </div>
+
+        </div>
+
+        <h2>Bảng Tóm Tắt 10 Mã</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã</th>
+                        <th>Return 30D</th>
+                        <th>Volatility</th>
+                        <th>Trend</th>
+                        <th>Giá Cuối</th>
+                        <th>Khuyến Nghị</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td class="ticker">VNM</td>
+                        <td class="positive">+12.09%</td>
+                        <td>2.02</td>
+                        <td class="positive">+0.2514</td>
+                        <td>62.10</td>
+                        <td><span class="badge badge-buy">✅ Xem xét</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">FPT</td>
+                        <td class="positive">+1.84%</td>
+                        <td>2.56</td>
+                        <td class="positive">+0.1716</td>
+                        <td>71.80</td>
+                        <td><span class="badge badge-buy">✅ Xem xét</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">VCB</td>
+                        <td class="positive">+2.38%</td>
+                        <td>2.10</td>
+                        <td class="positive">+0.0840</td>
+                        <td>60.30</td>
+                        <td><span class="badge badge-buy">✅ Xem xét</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">MSN</td>
+                        <td class="negative">-0.29%</td>
+                        <td>1.83</td>
+                        <td class="positive">+0.0182</td>
+                        <td>67.70</td>
+                        <td><span class="badge badge-watch">⚠️ Theo dõi</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">HPG</td>
+                        <td class="negative">-1.34%</td>
+                        <td>2.09</td>
+                        <td class="positive">+0.0092</td>
+                        <td>22.10</td>
+                        <td><span class="badge badge-watch">⚠️ Theo dõi</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">BID</td>
+                        <td class="positive">+0.03%</td>
+                        <td>2.17</td>
+                        <td class="negative">-0.0172</td>
+                        <td>39.50</td>
+                        <td><span class="badge badge-watch">⚠️ Theo dõi</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">TCB</td>
+                        <td class="negative">-3.09%</td>
+                        <td>2.37</td>
+                        <td class="negative">-0.1062</td>
+                        <td>31.35</td>
+                        <td><span class="badge badge-watch">⚠️ Theo dõi</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">MBB</td>
+                        <td class="negative">-17.38%</td>
+                        <td>4.26</td>
+                        <td class="negative">-0.0462</td>
+                        <td>20.20</td>
+                        <td><span class="badge badge-avoid">❌ Tránh</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">VIC</td>
+                        <td class="negative">-5.87%</td>
+                        <td>2.60</td>
+                        <td class="negative">-0.2171</td>
+                        <td>208.50</td>
+                        <td><span class="badge badge-avoid">❌ Tránh</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">VHM</td>
+                        <td class="negative">-49.93%</td>
+                        <td>11.71</td>
+                        <td class="negative">-2.5999</td>
+                        <td>71.60</td>
+                        <td><span class="badge badge-avoid">❌ Tránh</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Biểu Đồ Hiệu Suất So Sánh (Chuẩn Hóa = 100)</h2>
+        <div class="chart-container">
+            <canvas id="performanceChart"></canvas>
+        </div>
+
+        <script>
+            const chartData = {"BID": [["2026-06-30", 100.0], ["2026-07-01", 101.53], ["2026-07-02", 100.36], ["2026-07-03", 99.64], ["2026-07-06", 97.52], ["2026-07-07", 98.23], ["2026-07-08", 98.59], ["2026-07-09", 97.3], ["2026-07-10", 96.71], ["2026-07-13", 94.23], ["2026-07-14", 94.94], ["2026-07-15", 93.18], ["2026-07-16", 92.7], ["2026-07-17", 92.58], ["2026-07-20", 88.28], ["2026-07-21", 87.81], ["2026-07-22", 85.54], ["2026-07-23", 85.9], ["2026-07-24", 85.9], ["2026-07-27", 82.8], ["2026-07-28", 83.75], ["2026-07-29", 84.59], ["2026-07-30", 88.88], ["2026-07-31", 90.67], ["2026-08-03", 91.27], ["2026-08-04", 90.67], ["2026-08-05", 90.67], ["2026-08-06", 90.43], ["2026-08-07", 93.18], ["2026-08-10", 94.25]], "FPT": [["2026-06-30", 100.0], ["2026-07-01", 103.85], ["2026-07-02", 103.28], ["2026-07-03", 102.99], ["2026-07-06", 103.99], ["2026-07-07", 104.27], ["2026-07-08", 102.71], ["2026-07-09", 102.71], ["2026-07-10", 100.57], ["2026-07-13", 100.43], ["2026-07-14", 100.14], ["2026-07-15", 95.16], ["2026-07-16", 96.87], ["2026-07-17", 95.44], ["2026-07-20", 95.58], ["2026-07-21", 92.31], ["2026-07-22", 92.02], ["2026-07-23", 92.17], ["2026-07-24", 89.6], ["2026-07-27", 88.6], ["2026-07-28", 89.74], ["2026-07-29", 92.74], ["2026-07-30", 95.44], ["2026-07-31", 95.58], ["2026-08-03", 102.14], ["2026-08-04", 101.85], ["2026-08-05", 100.14], ["2026-08-06", 100.71], ["2026-08-07", 100.85], ["2026-08-10", 102.28]], "HPG": [["2026-06-30", 100.0], ["2026-07-01", 100.64], ["2026-07-02", 100.43], ["2026-07-03", 99.79], ["2026-07-06", 99.14], ["2026-07-07", 99.14], ["2026-07-08", 99.57], ["2026-07-09", 99.57], ["2026-07-10", 98.5], ["2026-07-13", 96.14], ["2026-07-14", 96.57], ["2026-07-15", 96.14], ["2026-07-16", 95.28], ["2026-07-17", 93.78], ["2026-07-20", 88.41], ["2026-07-21", 89.27], ["2026-07-22", 88.84], ["2026-07-23", 89.27], ["2026-07-24", 89.27], ["2026-07-27", 87.34], ["2026-07-28", 90.13], ["2026-07-29", 92.92], ["2026-07-30", 93.56], ["2026-07-31", 93.13], ["2026-08-03", 96.78], ["2026-08-04", 95.06], ["2026-08-05", 94.42], ["2026-08-06", 93.78], ["2026-08-07", 94.42], ["2026-08-10", 94.85]], "MBB": [["2026-06-30", 100.0], ["2026-07-01", 102.19], ["2026-07-02", 101.77], ["2026-07-03", 101.57], ["2026-07-06", 100.41], ["2026-07-07", 102.19], ["2026-07-08", 103.18], ["2026-07-09", 101.53], ["2026-07-10", 101.73], ["2026-07-13", 100.91], ["2026-07-14", 101.32], ["2026-07-15", 98.84], ["2026-07-16", 99.67], ["2026-07-17", 98.02], ["2026-07-20", 94.1], ["2026-07-21", 93.69], ["2026-07-22", 92.24], ["2026-07-23", 91.0], ["2026-07-24", 90.38], ["2026-07-27", 89.35], ["2026-07-28", 91.42], ["2026-07-29", 91.21], ["2026-07-30", 92.86], ["2026-07-31", 92.86], ["2026-08-03", 99.05], ["2026-08-04", 100.7], ["2026-08-05", 100.29], ["2026-08-06", 98.64], ["2026-08-07", 99.67], ["2026-08-10", 83.37]], "MSN": [["2026-06-30", 100.0], ["2026-07-01", 100.55], ["2026-07-02", 100.42], ["2026-07-03", 99.58], ["2026-07-06", 97.78], ["2026-07-07", 95.15], ["2026-07-08", 95.7], ["2026-07-09", 95.56], ["2026-07-10", 95.42], ["2026-07-13", 94.17], ["2026-07-14", 94.87], ["2026-07-15", 94.31], ["2026-07-16", 94.31], ["2026-07-17", 94.31], ["2026-07-20", 89.88], ["2026-07-21", 90.01], ["2026-07-22", 88.63], ["2026-07-23", 88.77], ["2026-07-24", 88.63], ["2026-07-27", 88.63], ["2026-07-28", 91.12], ["2026-07-29", 91.96], ["2026-07-30", 94.17], ["2026-07-31", 91.68], ["2026-08-03", 94.59], ["2026-08-04", 94.87], ["2026-08-05", 93.2], ["2026-08-06", 92.23], ["2026-08-07", 93.48], ["2026-08-10", 93.9]], "TCB": [["2026-06-30", 100.0], ["2026-07-01", 102.39], ["2026-07-02", 101.04], ["2026-07-03", 100.3], ["2026-07-06", 100.75], ["2026-07-07", 101.04], ["2026-07-08", 100.75], ["2026-07-09", 98.96], ["2026-07-10", 96.72], ["2026-07-13", 96.57], ["2026-07-14", 96.12], ["2026-07-15", 94.03], ["2026-07-16", 95.22], ["2026-07-17", 93.88], ["2026-07-20", 89.4], ["2026-07-21", 88.96], ["2026-07-22", 86.57], ["2026-07-23", 87.31], ["2026-07-24", 85.37], ["2026-07-27", 84.33], ["2026-07-28", 85.07], ["2026-07-29", 84.78], ["2026-07-30", 87.46], ["2026-07-31", 86.42], ["2026-08-03", 89.4], ["2026-08-04", 88.51], ["2026-08-05", 88.51], ["2026-08-06", 87.16], ["2026-08-07", 88.66], ["2026-08-10", 93.58]], "VCB": [["2026-06-30", 100.0], ["2026-07-01", 101.29], ["2026-07-02", 99.84], ["2026-07-03", 99.68], ["2026-07-06", 98.39], ["2026-07-07", 98.55], ["2026-07-08", 99.04], ["2026-07-09", 98.23], ["2026-07-10", 97.27], ["2026-07-13", 94.69], ["2026-07-14", 95.18], ["2026-07-15", 95.18], ["2026-07-16", 95.5], ["2026-07-17", 94.05], ["2026-07-20", 91.16], ["2026-07-21", 91.16], ["2026-07-22", 86.9], ["2026-07-23", 86.82], ["2026-07-24", 86.98], ["2026-07-27", 86.82], ["2026-07-28", 86.98], ["2026-07-29", 87.78], ["2026-07-30", 90.84], ["2026-07-31", 95.34], ["2026-08-03", 97.75], ["2026-08-04", 96.46], ["2026-08-05", 95.34], ["2026-08-06", 94.86], ["2026-08-07", 95.98], ["2026-08-10", 96.95]], "VHM": [["2026-06-30", 100.0], ["2026-07-01", 97.96], ["2026-07-02", 99.08], ["2026-07-03", 99.87], ["2026-07-06", 101.52], ["2026-07-07", 98.88], ["2026-07-08", 98.81], ["2026-07-09", 97.96], ["2026-07-10", 96.84], ["2026-07-13", 94.2], ["2026-07-14", 92.75], ["2026-07-15", 89.59], ["2026-07-16", 94.07], ["2026-07-17", 92.56], ["2026-07-20", 90.18], ["2026-07-21", 89.86], ["2026-07-22", 83.6], ["2026-07-23", 86.96], ["2026-07-24", 85.64], ["2026-07-27", 86.3], ["2026-07-28", 86.89], ["2026-07-29", 92.23], ["2026-07-30", 97.43], ["2026-07-31", 97.56], ["2026-08-03", 97.5], ["2026-08-04", 100.72], ["2026-08-05", 50.4], ["2026-08-06", 50.79], ["2026-08-07", 48.09], ["2026-08-10", 47.17]], "VIC": [["2026-06-30", 100.0], ["2026-07-01", 98.68], ["2026-07-02", 100.14], ["2026-07-03", 100.14], ["2026-07-06", 100.14], ["2026-07-07", 100.14], ["2026-07-08", 100.32], ["2026-07-09", 100.45], ["2026-07-10", 101.36], ["2026-07-13", 100.68], ["2026-07-14", 99.55], ["2026-07-15", 98.64], ["2026-07-16", 101.36], ["2026-07-17", 100.0], ["2026-07-20", 100.0], ["2026-07-21", 98.77], ["2026-07-22", 91.86], ["2026-07-23", 97.27], ["2026-07-24", 96.86], ["2026-07-27", 97.05], ["2026-07-28", 97.18], ["2026-07-29", 99.73], ["2026-07-30", 100.0], ["2026-07-31", 97.32], ["2026-08-03", 96.82], ["2026-08-04", 99.09], ["2026-08-05", 100.0], ["2026-08-06", 99.45], ["2026-08-07", 97.73], ["2026-08-10", 94.77]], "VNM": [["2026-06-30", 100.0], ["2026-07-01", 100.73], ["2026-07-02", 101.28], ["2026-07-03", 100.18], ["2026-07-06", 100.91], ["2026-07-07", 100.55], ["2026-07-08", 101.64], ["2026-07-09", 101.64], ["2026-07-10", 103.28], ["2026-07-13", 101.09], ["2026-07-14", 102.19], ["2026-07-15", 102.55], ["2026-07-16", 102.55], ["2026-07-17", 107.66], ["2026-07-20", 106.75], ["2026-07-21", 106.57], ["2026-07-22", 107.85], ["2026-07-23", 105.47], ["2026-07-24", 107.48], ["2026-07-27", 105.66], ["2026-07-28", 108.76], ["2026-07-29", 109.49], ["2026-07-30", 111.68], ["2026-07-31", 111.13], ["2026-08-03", 110.04], ["2026-08-04", 108.58], ["2026-08-05", 106.93], ["2026-08-06", 107.66], ["2026-08-07", 113.14], ["2026-08-10", 113.32]]};
+            
+            const ctx = document.getElementById('performanceChart').getContext('2d');
+            const datasets = [];
+            const colors = ['#059669', '#2563eb', '#dc2626', '#f59e0b', '#8b5cf6', '#ec4899', '#14b8a6', '#ca8a04', '#6366f1', '#ef4444'];
+            
+            Object.entries(chartData).forEach((entry, idx) => {
+                const [ticker, data] = entry;
+                datasets.push({
+                    label: ticker,
+                    data: data.map(d => ({x: d[0], y: d[1]})),
+                    borderColor: colors[idx % colors.length],
+                    backgroundColor: 'transparent',
+                    borderWidth: 2,
+                    tension: 0.3,
+                    pointRadius: 0
+                });
+            });
+            
+            new Chart(ctx, {
+                type: 'scatter',
+                data: { datasets: datasets },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'right', labels: { font: { size: 11 }, boxWidth: 12 } }
+                    },
+                    scales: {
+                        x: { 
+                            type: 'category',
+                            title: { display: true, text: 'Ngày', font: { size: 11 } }
+                        },
+                        y: { 
+                            title: { display: true, text: 'Giá (Chuẩn = 100)', font: { size: 11 } },
+                            beginAtZero: false
+                        }
+                    }
+                }
+            });
+        </script>
+
+        <div class="footer">
+            <p>VN Stock Daily Analyst • Dữ liệu cập nhật hàng ngày</p>
+            <p style="margin-top: 4px; font-size: 10px;">Báo cáo được tạo tự động. Không phải lời khuyên đầu tư.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,95 +1,92 @@
 {
-  "analysis_date": "2026-07-21",
-  "metrics": {
-    "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
-    },
-    "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
-      "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
-    },
-    "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
-    },
-    "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
-    },
-    "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
-    },
-    "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
-    },
-    "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
-      "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
-    },
-    "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
-      "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
-    },
-    "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
-    },
-    "BID": {
-      "return_30d": -12.3,
-      "return_full": -10.51,
-      "volatility": 1.4,
-      "trend": "down",
-      "volume_trend": 1.62,
-      "latest_close": 36.8,
-      "data_points": 22
-    }
+  "BID": {
+    "return_30d": 0.03,
+    "volatility": 2.17,
+    "trend_slope": -0.0172,
+    "volume_trend": 15.96,
+    "latest_close": 39.5,
+    "latest_date": "2026-08-10",
+    "data_points": 21
+  },
+  "FPT": {
+    "return_30d": 1.84,
+    "volatility": 2.56,
+    "trend_slope": 0.1716,
+    "volume_trend": -7.88,
+    "latest_close": 71.8,
+    "latest_date": "2026-08-10",
+    "data_points": 21
+  },
+  "HPG": {
+    "return_30d": -1.34,
+    "volatility": 2.09,
+    "trend_slope": 0.0092,
+    "volume_trend": -14.26,
+    "latest_close": 22.1,
+    "latest_date": "2026-08-10",
+    "data_points": 21
+  },
+  "MBB": {
+    "return_30d": -17.38,
+    "volatility": 4.26,
+    "trend_slope": -0.0462,
+    "volume_trend": 7.75,
+    "latest_close": 20.2,
+    "latest_date": "2026-08-10",
+    "data_points": 21
+  },
+  "MSN": {
+    "return_30d": -0.29,
+    "volatility": 1.83,
+    "trend_slope": 0.0182,
+    "volume_trend": -18.42,
+    "latest_close": 67.7,
+    "latest_date": "2026-08-10",
+    "data_points": 21
+  },
+  "TCB": {
+    "return_30d": -3.09,
+    "volatility": 2.37,
+    "trend_slope": -0.1062,
+    "volume_trend": 16.4,
+    "latest_close": 31.35,
+    "latest_date": "2026-08-10",
+    "data_points": 21
+  },
+  "VCB": {
+    "return_30d": 2.38,
+    "volatility": 2.1,
+    "trend_slope": 0.084,
+    "volume_trend": 29.95,
+    "latest_close": 60.3,
+    "latest_date": "2026-08-10",
+    "data_points": 21
+  },
+  "VHM": {
+    "return_30d": -49.93,
+    "volatility": 11.71,
+    "trend_slope": -2.5999,
+    "volume_trend": 50.65,
+    "latest_close": 71.6,
+    "latest_date": "2026-08-10",
+    "data_points": 21
+  },
+  "VIC": {
+    "return_30d": -5.87,
+    "volatility": 2.6,
+    "trend_slope": -0.2171,
+    "volume_trend": 20.55,
+    "latest_close": 208.5,
+    "latest_date": "2026-08-10",
+    "data_points": 21
+  },
+  "VNM": {
+    "return_30d": 12.09,
+    "volatility": 2.02,
+    "trend_slope": 0.2514,
+    "volume_trend": 11.0,
+    "latest_close": 62.1,
+    "latest_date": "2026-08-10",
+    "data_points": 21
   }
 }
