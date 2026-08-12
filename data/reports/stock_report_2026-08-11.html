@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VN Stock Daily Briefing</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+            background: #f8f9fa;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            page-break-after: always;
+        }
+        h1 {
+            color: #1a73e8;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        .date {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section h2 {
+            font-size: 16px;
+            color: #1a73e8;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #e8f0fe;
+            padding-bottom: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+        th {
+            background: #f8f9fa;
+            padding: 10px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #ddd;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .chart-container {
+            position: relative;
+            height: 250px;
+            margin-bottom: 20px;
+        }
+        .top-picks {
+            display: grid;
+            gap: 12px;
+            margin-top: 10px;
+        }
+        .pick {
+            background: #f0f7ff;
+            border-left: 4px solid #1a73e8;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        .pick-title {
+            font-weight: 600;
+            color: #1a73e8;
+            margin-bottom: 4px;
+        }
+        .pick-reason {
+            color: #555;
+            line-height: 1.4;
+        }
+        @media print {
+            body { padding: 0; background: white; }
+            .container { box-shadow: none; padding: 0; }
+            .page-break { page-break-after: always; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 VN Stock Daily Briefing</h1>
+        <div class="date">Ngày 11/08/2026 • Data từ 30 ngày gần nhất</div>
+        
+        <div class="section">
+            <h2>📈 So sánh Performance - Top 3</h2>
+            <div class="chart-container">
+                <canvas id="performanceChart"></canvas>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📋 Bảng tóm tắt 10 mã</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticker</th>
+                        <th>Return 30D</th>
+                        <th>Volatility</th>
+                        <th>Trend</th>
+                        <th>Khuyến nghị</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+    <tr>
+      <td>VNM</td>
+      <td style="text-align:right">11.91%</td>
+      <td style="text-align:right">1.97%</td>
+      <td>Uptrend</td>
+      <td style="text-align:center">✅ Nên xem</td>
+    </tr>
+    
+    <tr>
+      <td>VCB</td>
+      <td style="text-align:right">1.53%</td>
+      <td style="text-align:right">2.05%</td>
+      <td>Uptrend</td>
+      <td style="text-align:center">✅ Nên xem</td>
+    </tr>
+    
+    <tr>
+      <td>FPT</td>
+      <td style="text-align:right">0.99%</td>
+      <td style="text-align:right">2.50%</td>
+      <td>Uptrend</td>
+      <td style="text-align:center">✅ Nên xem</td>
+    </tr>
+    
+    <tr>
+      <td>BID</td>
+      <td style="text-align:right">-0.99%</td>
+      <td style="text-align:right">2.13%</td>
+      <td>Downtrend</td>
+      <td style="text-align:center">⚠️ Theo dõi</td>
+    </tr>
+    
+    <tr>
+      <td>MSN</td>
+      <td style="text-align:right">-1.18%</td>
+      <td style="text-align:right">1.79%</td>
+      <td>Downtrend</td>
+      <td style="text-align:center">⚠️ Theo dõi</td>
+    </tr>
+    
+    <tr>
+      <td>HPG</td>
+      <td style="text-align:right">-1.56%</td>
+      <td style="text-align:right">2.04%</td>
+      <td>Downtrend</td>
+      <td style="text-align:center">⚠️ Theo dõi</td>
+    </tr>
+    
+    <tr>
+      <td>TCB</td>
+      <td style="text-align:right">-4.17%</td>
+      <td style="text-align:right">2.32%</td>
+      <td>Downtrend</td>
+      <td style="text-align:center">⚠️ Theo dõi</td>
+    </tr>
+    
+    <tr>
+      <td>VIC</td>
+      <td style="text-align:right">-5.87%</td>
+      <td style="text-align:right">2.54%</td>
+      <td>Downtrend</td>
+      <td style="text-align:center">❌ Tránh</td>
+    </tr>
+    
+    <tr>
+      <td>MBB</td>
+      <td style="text-align:right">-16.77%</td>
+      <td style="text-align:right">4.16%</td>
+      <td>Downtrend</td>
+      <td style="text-align:center">❌ Tránh</td>
+    </tr>
+    
+    <tr>
+      <td>VHM</td>
+      <td style="text-align:right">-49.58%</td>
+      <td style="text-align:right">11.44%</td>
+      <td>Downtrend</td>
+      <td style="text-align:center">❌ Tránh</td>
+    </tr>
+    
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>⭐ Top picks hôm nay</h2>
+            <div class="top-picks">
+                <div class="pick">
+                    <div class="pick-title">VNM — 11.91% | Volatility 1.97%</div>
+                    <div class="pick-reason">Mã mạnh nhất 30 ngày gần nhất với volatility thấp. Trend tăng bền vững. Khối lượng giao dịch tăng 11.8%.</div>
+                </div>
+                <div class="pick">
+                    <div class="pick-title">VCB — 1.53% | Volatility 2.05%</div>
+                    <div class="pick-reason">Cổ phiếu ngân hàng hàng đầu với trend tăng ổn định. Biến động giá thấp, phù hợp với nhà đầu tư bảo thủ. Volume giảm nhẹ.</div>
+                </div>
+                <div class="pick">
+                    <div class="pick-title">FPT — 0.99% | Volatility 2.50%</div>
+                    <div class="pick-reason">Doanh nghiệp công nghệ với trend tăng. Volatility vừa phải. Giữ vị thế trong danh sách theo dõi của các quỹ lớn.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" style="font-size: 12px; color: #999; margin-top: 30px; padding-top: 15px; border-top: 1px solid #eee;">
+            ⚠️ <strong>Disclaimer:</strong> Báo cáo này chỉ mang tính chất thông tin, không phải lời khuyên đầu tư. Nhà đầu tư nên tự đánh giá rủi ro trước khi quyết định.
+        </div>
+    </div>
+    
+    <script>
+        const ctx = document.getElementById('performanceChart').getContext('2d');
+        const data = {
+            labels: Array.from({length: 30}, (_, i) => i + 1),
+            datasets: [
+                {
+                    label: 'VNM',
+                    data: [np.float64(100.0), np.float64(100.54347826086956), np.float64(99.45652173913044), np.float64(100.18115942028984), np.float64(99.81884057971014), np.float64(100.90579710144927), np.float64(100.90579710144927), np.float64(102.53623188405795), np.float64(100.36231884057972), np.float64(101.44927536231883), np.float64(101.81159420289856), np.float64(101.81159420289856), np.float64(106.88405797101449), np.float64(105.9782608695652), np.float64(105.79710144927535), np.float64(107.06521739130434), np.float64(104.71014492753623), np.float64(106.70289855072464), np.float64(104.89130434782608), np.float64(107.97101449275361), np.float64(108.69565217391303), np.float64(110.86956521739131), np.float64(110.32608695652173), np.float64(109.2391304347826), np.float64(107.78985507246377), np.float64(106.15942028985508), np.float64(106.88405797101449), np.float64(112.31884057971013), np.float64(112.5), np.float64(112.31884057971013)],
+                    borderColor: '#1a73e8',
+                    backgroundColor: 'rgba(26, 115, 232, 0.1)',
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 0,
+                },
+                {
+                    label: 'VCB',
+                    data: [np.float64(100.0), np.float64(98.57142857142858), np.float64(98.4126984126984), np.float64(97.14285714285714), np.float64(97.3015873015873), np.float64(97.77777777777777), np.float64(96.98412698412699), np.float64(96.03174603174604), np.float64(93.4920634920635), np.float64(93.96825396825396), np.float64(93.96825396825396), np.float64(94.28571428571428), np.float64(92.85714285714286), np.float64(90.0), np.float64(90.0), np.float64(85.79365079365078), np.float64(85.71428571428571), np.float64(85.87301587301587), np.float64(85.71428571428571), np.float64(85.87301587301587), np.float64(86.66666666666667), np.float64(89.68253968253968), np.float64(94.12698412698413), np.float64(96.50793650793649), np.float64(95.23809523809523), np.float64(94.12698412698413), np.float64(93.65079365079364), np.float64(94.76190476190477), np.float64(95.71428571428571), np.float64(94.92063492063491)],
+                    borderColor: '#34a853',
+                    backgroundColor: 'rgba(52, 168, 83, 0.1)',
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 0,
+                },
+                {
+                    label: 'FPT',
+                    data: [np.float64(100.0), np.float64(99.45130315500685), np.float64(99.17695473251028), np.float64(100.13717421124828), np.float64(100.41152263374484), np.float64(98.9026063100137), np.float64(98.9026063100137), np.float64(96.84499314128942), np.float64(96.70781893004114), np.float64(96.43347050754457), np.float64(91.63237311385458), np.float64(93.278463648834), np.float64(91.90672153635116), np.float64(92.04389574759944), np.float64(88.88888888888887), np.float64(88.6145404663923), np.float64(88.7517146776406), np.float64(86.28257887517145), np.float64(85.32235939643347), np.float64(86.41975308641975), np.float64(89.30041152263372), np.float64(91.90672153635116), np.float64(92.04389574759944), np.float64(98.35390946502058), np.float64(98.079561042524), np.float64(96.43347050754457), np.float64(96.98216735253772), np.float64(97.119341563786), np.float64(98.49108367626886), np.float64(97.66803840877914)],
+                    borderColor: '#fbbc04',
+                    backgroundColor: 'rgba(251, 188, 4, 0.1)',
+                    borderWidth: 2,
+                    fill: true,
+                    tension: 0.4,
+                    pointRadius: 0,
+                }
+            ]
+        };
+        
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Normalized Price (Base = 100)'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
