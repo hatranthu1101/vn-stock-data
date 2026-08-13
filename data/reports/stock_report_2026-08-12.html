@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VN Stock Daily Briefing</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #1a73e8;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .date {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .summary-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .summary-card.mid {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        .summary-card.down {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        .summary-card h3 {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .summary-card .tickers {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            font-size: 13px;
+        }
+        th {
+            background: #f0f0f0;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #ddd;
+        }
+        td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #eee;
+        }
+        tr:hover {
+            background: #f9f9f9;
+        }
+        .positive { color: #22ab94; font-weight: 600; }
+        .negative { color: #d32f2f; font-weight: 600; }
+        .neutral { color: #666; }
+        .up { color: #22ab94; }
+        .down { color: #d32f2f; }
+        .side { color: #ff9800; }
+        .classification {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .top-picks {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .pick-card {
+            background: #e8f5e9;
+            border-left: 4px solid #22ab94;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .pick-card h4 {
+            color: #22ab94;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .pick-card p {
+            font-size: 13px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid #d4e8de;
+        }
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a73e8;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 10px;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px;
+            margin-top: 20px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #333;
+        }
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 VN Stock Daily Briefing</h1>
+        <div class="date">Ngày phân tích: 2026-08-12</div>
+        
+        <div class="summary-grid">
+            <div class="summary-card">
+                <h3>✅ Nên xem xét</h3>
+                <div class="tickers">VNM, VCB, FPT</div>
+            </div>
+            <div class="summary-card mid">
+                <h3>⚠️ Theo dõi</h3>
+                <div class="tickers">BID, MSN, HPG, TCB</div>
+            </div>
+            <div class="summary-card down">
+                <h3>❌ Tránh/Chờ</h3>
+                <div class="tickers">VIC, MBB, VHM</div>
+            </div>
+        </div>
+        
+        <div class="section-title">Bảng tóm tắt 10 mã cổ phiếu</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã</th>
+                    <th>Giá đóng cửa</th>
+                    <th>Return 30D (%)</th>
+                    <th>Total Return (%)</th>
+                    <th>Volatility (%)</th>
+                    <th>Trend</th>
+                    <th>Vol Trend</th>
+                    <th>Khuyến nghị</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>VNM</strong></td>
+                    <td>61.80</td>
+                    <td class="positive">+11.55%</td>
+                    <td class="positive">+2.95%</td>
+                    <td>1.27%</td>
+                    <td>↑ Up</td>
+                    <td class="positive">+42.1%</td>
+                    <td>✅ Nên xem xét</td>
+                </tr>
+                <tr>
+                    <td><strong>VCB</strong></td>
+                    <td>59.70</td>
+                    <td class="positive">+1.36%</td>
+                    <td class="positive">-4.94%</td>
+                    <td>1.47%</td>
+                    <td>↑ Up</td>
+                    <td class="negative">-36.1%</td>
+                    <td>✅ Nên xem xét</td>
+                </tr>
+                <tr>
+                    <td><strong>FPT</strong></td>
+                    <td>70.80</td>
+                    <td class="positive">+0.43%</td>
+                    <td class="positive">-3.40%</td>
+                    <td>1.91%</td>
+                    <td>↑ Up</td>
+                    <td class="negative">-40.1%</td>
+                    <td>✅ Nên xem xét</td>
+                </tr>
+                <tr>
+                    <td><strong>BID</strong></td>
+                    <td>39.25</td>
+                    <td class="negative">-0.61%</td>
+                    <td class="negative">-4.55%</td>
+                    <td>1.76%</td>
+                    <td>→ Sideway</td>
+                    <td class="negative">-25.9%</td>
+                    <td>⚠️ Theo dõi</td>
+                </tr>
+                <tr>
+                    <td><strong>MSN</strong></td>
+                    <td>67.20</td>
+                    <td class="negative">-1.03%</td>
+                    <td class="negative">-14.07%</td>
+                    <td>1.46%</td>
+                    <td>→ Sideway</td>
+                    <td class="negative">-28.8%</td>
+                    <td>⚠️ Theo dõi</td>
+                </tr>
+                <tr>
+                    <td><strong>HPG</strong></td>
+                    <td>22.10</td>
+                    <td class="negative">-1.34%</td>
+                    <td class="negative">-10.96%</td>
+                    <td>1.42%</td>
+                    <td>→ Sideway</td>
+                    <td class="negative">-20.5%</td>
+                    <td>⚠️ Theo dõi</td>
+                </tr>
+                <tr>
+                    <td><strong>TCB</strong></td>
+                    <td>31.50</td>
+                    <td class="negative">-2.63%</td>
+                    <td class="negative">-3.40%</td>
+                    <td>1.70%</td>
+                    <td>→ Sideway</td>
+                    <td class="positive">+40.5%</td>
+                    <td>⚠️ Theo dõi</td>
+                </tr>
+                <tr>
+                    <td><strong>VIC</strong></td>
+                    <td>215.50</td>
+                    <td class="negative">-2.71%</td>
+                    <td class="negative">+0.47%</td>
+                    <td>2.58%</td>
+                    <td>↓ Down</td>
+                    <td class="positive">+40.2%</td>
+                    <td>❌ Tránh/Chờ</td>
+                </tr>
+                <tr>
+                    <td><strong>MBB</strong></td>
+                    <td>20.45</td>
+                    <td class="negative">-16.36%</td>
+                    <td class="negative">-19.42%</td>
+                    <td>2.33%</td>
+                    <td>→ Sideway</td>
+                    <td class="positive">+8.0%</td>
+                    <td>❌ Tránh/Chờ</td>
+                </tr>
+                <tr>
+                    <td><strong>VHM</strong></td>
+                    <td>73.80</td>
+                    <td class="negative">-48.39%</td>
+                    <td class="negative">-48.57%</td>
+                    <td>6.58%</td>
+                    <td>↓ Down</td>
+                    <td class="positive">+68.7%</td>
+                    <td>❌ Tránh/Chờ</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="section-title">Top Picks Hôm Nay</div>
+        <div class="top-picks">
+            <div class="pick-card">
+                <h4>VNM</h4>
+                <p>Khả năng tăng trưởng mạnh nhất trong 30 ngày qua (+11.55%). Volatility thấp (1.27%), xu hướng tăng rõ ràng. Volume tăng 42% so với bình quân.</p>
+                <div class="metric-row">
+                    <span>Return 30D: <strong class="positive">+11.55%</strong></span>
+                    <span>Volatility: <strong>1.27%</strong></span>
+                </div>
+            </div>
+            <div class="pick-card">
+                <h4>VCB</h4>
+                <p>Ngân hàng dẫn đầu với xu hướng tăng ổn định (+1.36% 30D). Volatility kiểm soát tốt (1.47%), một lựa chọn an toàn cho nhà đầu tư bảo thủ.</p>
+                <div class="metric-row">
+                    <span>Return 30D: <strong class="positive">+1.36%</strong></span>
+                    <span>Volatility: <strong>1.47%</strong></span>
+                </div>
+            </div>
+            <div class="pick-card">
+                <h4>FPT</h4>
+                <p>Công ty công nghệ hàng đầu, xu hướng tăng (+0.43% 30D). Dù còn nhỏ nhưng có tiềm năng phục hồi, giá đóng cửa 70.8 còn ở mức hợp lý.</p>
+                <div class="metric-row">
+                    <span>Return 30D: <strong class="positive">+0.43%</strong></span>
+                    <span>Volatility: <strong>1.91%</strong></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="note">
+            <strong>📝 Ghi chú:</strong> Báo cáo dựa trên dữ liệu kỹ thuật trong 30 ngày gần nhất. 
+            Khuyến nghị không phải lời khuyên đầu tư chuyên nghiệp. Tự đánh giá rủi ro trước khi quyết định.
+        </div>
+    </div>
+</body>
+</html>
