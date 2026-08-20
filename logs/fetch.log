@@ -315,3 +315,18 @@
 2026-08-19 11:21:31,722 [ERROR] MSN: Lỗi — cannot access local variable 'hosting_service' where it is not associated with a value
 2026-08-19 11:21:32,588 [ERROR] BID: Lỗi — cannot access local variable 'hosting_service' where it is not associated with a value
 2026-08-19 11:21:32,588 [INFO] === Xong: 0/10 tickers | 0 dòng mới ===
+2026-08-20 11:22:25,649 [INFO] Fetch từ 2026-08-14 → 2026-08-19
+2026-08-20 11:22:26,809 [INFO] Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: Non-scalable fonts are not supported
+2026-08-20 11:22:27,088 [INFO] generated new fontManager
+2026-08-20 11:22:29,574 [INFO] Device registered: cca56bbe7c6ef2789b16be206e2e3b77 (version 0.0.1)
+2026-08-20 11:22:31,498 [ERROR] VCB: Lỗi — cannot access local variable 'hosting_service' where it is not associated with a value
+2026-08-20 11:22:33,006 [ERROR] VIC: Lỗi — cannot access local variable 'hosting_service' where it is not associated with a value
+2026-08-20 11:22:34,122 [ERROR] VHM: Lỗi — cannot access local variable 'hosting_service' where it is not associated with a value
+2026-08-20 11:22:35,450 [ERROR] HPG: Lỗi — cannot access local variable 'hosting_service' where it is not associated with a value
+2026-08-20 11:22:36,419 [ERROR] TCB: Lỗi — cannot access local variable 'hosting_service' where it is not associated with a value
+2026-08-20 11:22:37,163 [ERROR] MBB: Lỗi — cannot access local variable 'hosting_service' where it is not associated with a value
+2026-08-20 11:22:38,219 [ERROR] VNM: Lỗi — cannot access local variable 'hosting_service' where it is not associated with a value
+2026-08-20 11:22:38,928 [ERROR] FPT: Lỗi — cannot access local variable 'hosting_service' where it is not associated with a value
+2026-08-20 11:22:39,645 [ERROR] MSN: Lỗi — cannot access local variable 'hosting_service' where it is not associated with a value
+2026-08-20 11:22:40,356 [ERROR] BID: Lỗi — cannot access local variable 'hosting_service' where it is not associated with a value
+2026-08-20 11:22:40,356 [INFO] === Xong: 0/10 tickers | 0 dòng mới ===
