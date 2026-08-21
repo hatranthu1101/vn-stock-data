@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VN Stock Daily Briefing — 2026-08-20</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; background: #f5f5f5; color: #333; line-height: 1.5; }
+        .container { max-width: 960px; margin: 0 auto; background: white; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        h1 { font-size: 28px; margin-bottom: 5px; color: #1a1a1a; }
+        .date { color: #666; font-size: 14px; margin-bottom: 20px; }
+        
+        .summary-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; font-size: 13px; }
+        .summary-table th { background: #2c3e50; color: white; padding: 10px; text-align: left; font-weight: 600; }
+        .summary-table td { padding: 9px 10px; border-bottom: 1px solid #e0e0e0; }
+        .summary-table tr:hover { background: #f9f9f9; }
+        .ticker { font-weight: 600; color: #2c3e50; }
+        .positive { color: #27ae60; font-weight: 600; }
+        .negative { color: #e74c3c; font-weight: 600; }
+        .neutral { color: #666; }
+        .badge { display: inline-block; padding: 3px 8px; border-radius: 3px; font-size: 11px; font-weight: 600; }
+        .badge-buy { background: #27ae60; color: white; }
+        .badge-hold { background: #f39c12; color: white; }
+        .badge-sell { background: #e74c3c; color: white; }
+        
+        .section { margin-bottom: 30px; }
+        .section-title { font-size: 16px; font-weight: 700; margin-bottom: 15px; color: #1a1a1a; border-bottom: 2px solid #2c3e50; padding-bottom: 8px; }
+        
+        .top-picks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }
+        .pick-card { background: #f8f9fa; border-left: 4px solid #27ae60; padding: 15px; border-radius: 4px; }
+        .pick-card.mid { border-left-color: #f39c12; }
+        .pick-card.bottom { border-left-color: #e74c3c; }
+        .pick-ticker { font-size: 18px; font-weight: 700; color: #2c3e50; margin-bottom: 5px; }
+        .pick-desc { font-size: 12px; color: #555; line-height: 1.4; }
+        .pick-stats { font-size: 11px; color: #888; margin-top: 8px; }
+        
+        .chart { margin: 20px 0; }
+        .chart-title { font-size: 13px; font-weight: 600; color: #333; margin-bottom: 10px; }
+        
+        .footnote { font-size: 12px; color: #999; margin-top: 30px; padding-top: 15px; border-top: 1px solid #e0e0e0; }
+        
+        @media print {
+            body { background: white; }
+            .container { box-shadow: none; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 VN Stock Daily Briefing</h1>
+        <div class="date">Cập nhật: 2026-08-20 | Data: 30 ngày gần nhất</div>
+        
+        <!-- Summary Table -->
+        <div class="section">
+            <div class="section-title">Bảng tóm tắt 10 cổ phiếu</div>
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Mã</th>
+                        <th>Giá hiện tại</th>
+                        <th>Return 30D</th>
+                        <th>Volatility</th>
+                        <th>Trend</th>
+                        <th>Khuyến nghị</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td class="ticker">VNM</td>
+                        <td>64.0</td>
+                        <td class="positive">+13.07%</td>
+                        <td>1.75%</td>
+                        <td class="positive">↗ 0.2396</td>
+                        <td><span class="badge badge-buy">Nên xem</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">FPT</td>
+                        <td>69.8</td>
+                        <td class="negative">-1.13%</td>
+                        <td>2.16%</td>
+                        <td class="positive">↗ 0.1121</td>
+                        <td><span class="badge badge-buy">Nên xem</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">MSN</td>
+                        <td>68.1</td>
+                        <td class="negative">-1.02%</td>
+                        <td>1.64%</td>
+                        <td class="positive">↗ 0.0123</td>
+                        <td><span class="badge badge-buy">Nên xem</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">VCB</td>
+                        <td>57.8</td>
+                        <td class="negative">-4.46%</td>
+                        <td>1.82%</td>
+                        <td class="positive">↗ 0.0449</td>
+                        <td><span class="badge badge-hold">Theo dõi</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">TCB</td>
+                        <td>31.0</td>
+                        <td class="negative">-4.32%</td>
+                        <td>2.05%</td>
+                        <td class="positive">↗ 0.0018</td>
+                        <td><span class="badge badge-hold">Theo dõi</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">HPG</td>
+                        <td>21.15</td>
+                        <td class="negative">-7.84%</td>
+                        <td>1.82%</td>
+                        <td class="negative">↘ -0.0150</td>
+                        <td><span class="badge badge-hold">Theo dõi</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">BID</td>
+                        <td>35.85</td>
+                        <td class="negative">-11.55%</td>
+                        <td>2.32%</td>
+                        <td class="negative">↘ -0.0558</td>
+                        <td><span class="badge badge-hold">Theo dõi</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">MBB</td>
+                        <td>20.3</td>
+                        <td class="negative">-17.65%</td>
+                        <td>3.50%</td>
+                        <td class="negative">↘ -0.1419</td>
+                        <td><span class="badge badge-sell">Tránh</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">VIC</td>
+                        <td>202.0</td>
+                        <td class="negative">-9.42%</td>
+                        <td>2.41%</td>
+                        <td class="negative">↘ -0.6291</td>
+                        <td><span class="badge badge-sell">Tránh</span></td>
+                    </tr>
+
+                    <tr>
+                        <td class="ticker">VHM</td>
+                        <td>69.5</td>
+                        <td class="negative">-52.72%</td>
+                        <td>9.60%</td>
+                        <td class="negative">↘ -3.2475</td>
+                        <td><span class="badge badge-sell">Tránh</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Chart Section -->
+        <div class="section">
+            <div class="section-title">📈 So sánh hiệu suất (Top 3)</div>
+            <div style="font-size: 12px; color: #666; margin-bottom: 10px;">Giá chuẩn hóa = 100 tại ngày bắt đầu (20 ngày trước)</div>
+
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                    <span style="font-weight: 600; color: #2c3e50;">VNM</span>
+                    <span class="positive">+9.6% (→ 109.6)</span>
+                </div>
+                <div style="background: #e0e0e0; height: 4px; border-radius: 2px; overflow: hidden;">
+                    <div style="background: #27ae60; height: 100%; width: 91.325%;"></div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                    <span style="font-weight: 600; color: #2c3e50;">FPT</span>
+                    <span class="positive">+7.7% (→ 107.7)</span>
+                </div>
+                <div style="background: #e0e0e0; height: 4px; border-radius: 2px; overflow: hidden;">
+                    <div style="background: #27ae60; height: 100%; width: 89.76666666666667%;"></div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 12px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                    <span style="font-weight: 600; color: #2c3e50;">MSN</span>
+                    <span class="positive">+4.9% (→ 104.9)</span>
+                </div>
+                <div style="background: #e0e0e0; height: 4px; border-radius: 2px; overflow: hidden;">
+                    <div style="background: #27ae60; height: 100%; width: 87.44166666666668%;"></div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- Top Picks -->
+        <div class="section">
+            <div class="section-title">✅ Nên xem xét (Top 3 picks)</div>
+            <div class="top-picks">
+
+                <div class="pick-card">
+                    <div class="pick-ticker">VNM</div>
+                    <div class="pick-desc">Mã duy nhất có return dương (+13.07%) trong 30 ngày. Volatility thấp (1.75%), trend tăng ổn định. Nên accumulate trên pullback.</div>
+                    <div class="pick-stats">Return: +13.07% | Vol: 1.75%</div>
+                </div>
+
+                <div class="pick-card">
+                    <div class="pick-ticker">FPT</div>
+                    <div class="pick-desc">Loss nhẹ (-1.13%) với volatility tương đối thấp (2.16%). Trend tích cực. Follow-up khi support zone được test.</div>
+                    <div class="pick-stats">Return: -1.13% | Vol: 2.16%</div>
+                </div>
+
+                <div class="pick-card">
+                    <div class="pick-ticker">MSN</div>
+                    <div class="pick-desc">Return gần flat (-1.02%) nhưng với volatility rất thấp (1.64%). Cấu trúc ổn định, đợi breakout.</div>
+                    <div class="pick-stats">Return: -1.02% | Vol: 1.64%</div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Mid Priority -->
+        <div class="section">
+            <div class="section-title">⚠️ Theo dõi thêm (Mid tier)</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+
+                <div style="padding: 10px; background: #f9f9f9; border-left: 3px solid #f39c12; border-radius: 2px; font-size: 12px;">
+                    <strong>VCB</strong> | Return: -4.46% | Vol: 1.82% | Giá: 57.8
+                </div>
+
+                <div style="padding: 10px; background: #f9f9f9; border-left: 3px solid #f39c12; border-radius: 2px; font-size: 12px;">
+                    <strong>TCB</strong> | Return: -4.32% | Vol: 2.05% | Giá: 31.0
+                </div>
+
+                <div style="padding: 10px; background: #f9f9f9; border-left: 3px solid #f39c12; border-radius: 2px; font-size: 12px;">
+                    <strong>HPG</strong> | Return: -7.84% | Vol: 1.82% | Giá: 21.15
+                </div>
+
+                <div style="padding: 10px; background: #f9f9f9; border-left: 3px solid #f39c12; border-radius: 2px; font-size: 12px;">
+                    <strong>BID</strong> | Return: -11.55% | Vol: 2.32% | Giá: 35.85
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Bottom -->
+        <div class="section">
+            <div class="section-title">❌ Tránh / Chờ thêm (Bottom tier)</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
+
+                <div style="padding: 10px; background: #fef5f5; border-left: 3px solid #e74c3c; border-radius: 2px; font-size: 12px;">
+                    <strong>MBB</strong> | Return: -17.65% | Risk: HIGH
+                </div>
+
+                <div style="padding: 10px; background: #fef5f5; border-left: 3px solid #e74c3c; border-radius: 2px; font-size: 12px;">
+                    <strong>VIC</strong> | Return: -9.42% | Risk: MID
+                </div>
+
+                <div style="padding: 10px; background: #fef5f5; border-left: 3px solid #e74c3c; border-radius: 2px; font-size: 12px;">
+                    <strong>VHM</strong> | Return: -52.72% | Risk: VERY HIGH
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="footnote">
+            📌 <strong>Ghi chú:</strong> Report dựa trên 30 ngày gần nhất của dữ liệu. Return được tính từ Close của ngày đầu tiên đến ngày cuối cùng. 
+            Volatility = độ lệch chuẩn của daily return. Trend = slope của fitted line trên Close prices. 
+            Khuyến nghị chỉ mang tính tham khảo và không phải lời khuyên đầu tư.
+        </div>
+    </div>
+</body>
+</html>
