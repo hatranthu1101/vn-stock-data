@@ -1,0 +1,175 @@
+{
+  "top_picks": [
+    {
+      "ticker": "MSN",
+      "reason": ""
+    },
+    {
+      "ticker": "VCB",
+      "reason": ""
+    },
+    {
+      "ticker": "FPT",
+      "reason": ""
+    }
+  ],
+  "mid": [
+    {
+      "ticker": "VNM",
+      "return_30d": 7.95,
+      "volatility": 1.68,
+      "trend": "tăng",
+      "latest_price": 63.8,
+      "volume_trend": -23.85,
+      "composite_score": 74.775
+    },
+    {
+      "ticker": "TCB",
+      "return_30d": 9.14,
+      "volatility": 2.0,
+      "trend": "tăng",
+      "latest_price": 31.65,
+      "volume_trend": -4.71,
+      "composite_score": 74.57
+    },
+    {
+      "ticker": "HPG",
+      "return_30d": 4.83,
+      "volatility": 1.7,
+      "trend": "sideway",
+      "latest_price": 21.7,
+      "volume_trend": -13.94,
+      "composite_score": 60.665
+    },
+    {
+      "ticker": "BID",
+      "return_30d": 2.93,
+      "volatility": 2.49,
+      "trend": "sideway",
+      "latest_price": 36.9,
+      "volume_trend": -17.95,
+      "composite_score": 57.739999999999995
+    }
+  ],
+  "bottom": [
+    {
+      "ticker": "VIC",
+      "return_30d": 1.43,
+      "volatility": 2.29,
+      "trend": "giảm",
+      "latest_price": 205.0,
+      "volume_trend": 12.65,
+      "composite_score": 44.989999999999995
+    },
+    {
+      "ticker": "MBB",
+      "return_30d": -6.71,
+      "volatility": 4.05,
+      "trend": "giảm",
+      "latest_price": 20.85,
+      "volume_trend": -26.7,
+      "composite_score": 36.519999999999996
+    },
+    {
+      "ticker": "VHM",
+      "return_30d": -43.5,
+      "volatility": 11.17,
+      "trend": "giảm",
+      "latest_price": 71.7,
+      "volume_trend": -10.09,
+      "composite_score": 3.25
+    }
+  ],
+  "all_rankings": [
+    {
+      "ticker": "MSN",
+      "return_30d": 9.23,
+      "volatility": 1.59,
+      "trend": "tăng",
+      "latest_price": 69.8,
+      "volume_trend": 16.39,
+      "composite_score": 75.64
+    },
+    {
+      "ticker": "VCB",
+      "return_30d": 9.34,
+      "volatility": 1.64,
+      "trend": "tăng",
+      "latest_price": 59.1,
+      "volume_trend": -22.18,
+      "composite_score": 75.57
+    },
+    {
+      "ticker": "FPT",
+      "return_30d": 11.46,
+      "volatility": 2.15,
+      "trend": "tăng",
+      "latest_price": 72.0,
+      "volume_trend": -18.03,
+      "composite_score": 75.355
+    },
+    {
+      "ticker": "VNM",
+      "return_30d": 7.95,
+      "volatility": 1.68,
+      "trend": "tăng",
+      "latest_price": 63.8,
+      "volume_trend": -23.85,
+      "composite_score": 74.775
+    },
+    {
+      "ticker": "TCB",
+      "return_30d": 9.14,
+      "volatility": 2.0,
+      "trend": "tăng",
+      "latest_price": 31.65,
+      "volume_trend": -4.71,
+      "composite_score": 74.57
+    },
+    {
+      "ticker": "HPG",
+      "return_30d": 4.83,
+      "volatility": 1.7,
+      "trend": "sideway",
+      "latest_price": 21.7,
+      "volume_trend": -13.94,
+      "composite_score": 60.665
+    },
+    {
+      "ticker": "BID",
+      "return_30d": 2.93,
+      "volatility": 2.49,
+      "trend": "sideway",
+      "latest_price": 36.9,
+      "volume_trend": -17.95,
+      "composite_score": 57.739999999999995
+    },
+    {
+      "ticker": "VIC",
+      "return_30d": 1.43,
+      "volatility": 2.29,
+      "trend": "giảm",
+      "latest_price": 205.0,
+      "volume_trend": 12.65,
+      "composite_score": 44.989999999999995
+    },
+    {
+      "ticker": "MBB",
+      "return_30d": -6.71,
+      "volatility": 4.05,
+      "trend": "giảm",
+      "latest_price": 20.85,
+      "volume_trend": -26.7,
+      "composite_score": 36.519999999999996
+    },
+    {
+      "ticker": "VHM",
+      "return_30d": -43.5,
+      "volatility": 11.17,
+      "trend": "giảm",
+      "latest_price": 71.7,
+      "volume_trend": -10.09,
+      "composite_score": 3.25
+    }
+  ]
+}
