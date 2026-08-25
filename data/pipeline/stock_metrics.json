@@ -1,95 +1,92 @@
 {
-  "analysis_date": "2026-07-21",
-  "metrics": {
-    "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
-    },
-    "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
-      "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
-    },
-    "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
-    },
-    "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
-    },
-    "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
-    },
-    "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
-    },
-    "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
-      "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
-    },
-    "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
-      "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
-    },
-    "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
-    },
-    "BID": {
-      "return_30d": -12.3,
-      "return_full": -10.51,
-      "volatility": 1.4,
-      "trend": "down",
-      "volume_trend": 1.62,
-      "latest_close": 36.8,
-      "data_points": 22
-    }
+  "VCB": {
+    "return_full": -5.73,
+    "return_30d": 0.0,
+    "volatility": 1.83,
+    "trend": "\u2191",
+    "vol_trend": 0.82,
+    "last_close": 59.2,
+    "data_points": 30
+  },
+  "VIC": {
+    "return_full": 0.0,
+    "return_30d": -2.05,
+    "volatility": 2.62,
+    "trend": "\u2193",
+    "vol_trend": 1.15,
+    "last_close": 214.5,
+    "data_points": 30
+  },
+  "VHM": {
+    "return_full": -48.85,
+    "return_30d": -47.87,
+    "volatility": 9.84,
+    "trend": "\u2193",
+    "vol_trend": 0.96,
+    "last_close": 73.4,
+    "data_points": 30
+  },
+  "HPG": {
+    "return_full": -10.35,
+    "return_30d": -1.11,
+    "volatility": 1.94,
+    "trend": "\u2192",
+    "vol_trend": 0.85,
+    "last_close": 22.25,
+    "data_points": 30
+  },
+  "TCB": {
+    "return_full": -3.56,
+    "return_30d": -2.33,
+    "volatility": 2.13,
+    "trend": "\u2191",
+    "vol_trend": 0.78,
+    "last_close": 31.45,
+    "data_points": 30
+  },
+  "MBB": {
+    "return_full": -18.24,
+    "return_30d": -15.48,
+    "volatility": 3.61,
+    "trend": "\u2193",
+    "vol_trend": 0.73,
+    "last_close": 20.75,
+    "data_points": 30
+  },
+  "VNM": {
+    "return_full": 5.28,
+    "return_30d": 12.86,
+    "volatility": 1.74,
+    "trend": "\u2191",
+    "vol_trend": 0.76,
+    "last_close": 63.2,
+    "data_points": 30
+  },
+  "FPT": {
+    "return_full": -2.58,
+    "return_30d": 1.56,
+    "volatility": 2.28,
+    "trend": "\u2191",
+    "vol_trend": 0.68,
+    "last_close": 71.4,
+    "data_points": 30
+  },
+  "MSN": {
+    "return_full": -10.49,
+    "return_30d": 2.34,
+    "volatility": 1.71,
+    "trend": "\u2191",
+    "vol_trend": 1.16,
+    "last_close": 70.0,
+    "data_points": 30
+  },
+  "BID": {
+    "return_full": -10.26,
+    "return_30d": -7.26,
+    "volatility": 2.4,
+    "trend": "\u2193",
+    "vol_trend": 0.79,
+    "last_close": 36.9,
+    "data_points": 30
   }
 }
