@@ -1,95 +1,92 @@
 {
-  "analysis_date": "2026-07-21",
-  "metrics": {
-    "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
-    },
-    "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
-      "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
-    },
-    "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
-    },
-    "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
-    },
-    "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
-    },
-    "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
-    },
-    "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
-      "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
-    },
-    "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
-      "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
-    },
-    "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
-    },
-    "BID": {
-      "return_30d": -12.3,
-      "return_full": -10.51,
-      "volatility": 1.4,
-      "trend": "down",
-      "volume_trend": 1.62,
-      "latest_close": 36.8,
-      "data_points": 22
-    }
+  "BID": {
+    "return_30d": 5.76,
+    "return_full": -10.75,
+    "volatility": 2.4,
+    "trend": "up",
+    "volume_trend": -24.08,
+    "last_close": 36.7,
+    "last_date": "2026-08-25"
+  },
+  "FPT": {
+    "return_30d": 13.67,
+    "return_full": -3.53,
+    "volatility": 2.08,
+    "trend": "up",
+    "volume_trend": -26.65,
+    "last_close": 70.7,
+    "last_date": "2026-08-25"
+  },
+  "HPG": {
+    "return_30d": 7.13,
+    "return_full": -12.17,
+    "volatility": 1.8,
+    "trend": "up",
+    "volume_trend": -9.67,
+    "last_close": 21.8,
+    "last_date": "2026-08-25"
+  },
+  "MBB": {
+    "return_30d": -4.62,
+    "return_full": -18.64,
+    "volatility": 4.13,
+    "trend": "up",
+    "volume_trend": -24.84,
+    "last_close": 20.65,
+    "last_date": "2026-08-25"
+  },
+  "MSN": {
+    "return_30d": 8.76,
+    "return_full": -11.13,
+    "volatility": 1.64,
+    "trend": "up",
+    "volume_trend": 12.11,
+    "last_close": 69.5,
+    "last_date": "2026-08-25"
+  },
+  "TCB": {
+    "return_30d": 10.8,
+    "return_full": -4.02,
+    "volatility": 1.95,
+    "trend": "down",
+    "volume_trend": -26.64,
+    "last_close": 31.3,
+    "last_date": "2026-08-25"
+  },
+  "VCB": {
+    "return_30d": 10.0,
+    "return_full": -5.41,
+    "volatility": 1.67,
+    "trend": "up",
+    "volume_trend": -16.23,
+    "last_close": 59.4,
+    "last_date": "2026-08-25"
+  },
+  "VHM": {
+    "return_30d": -43.82,
+    "return_full": -48.71,
+    "volatility": 11.4,
+    "trend": "up",
+    "volume_trend": -23.25,
+    "last_close": 73.6,
+    "last_date": "2026-08-25"
+  },
+  "VIC": {
+    "return_30d": 3.28,
+    "return_full": 2.8,
+    "volatility": 2.28,
+    "trend": "up",
+    "volume_trend": 7.55,
+    "last_close": 220.5,
+    "last_date": "2026-08-25"
+  },
+  "VNM": {
+    "return_30d": 8.12,
+    "return_full": 4.28,
+    "volatility": 1.57,
+    "trend": "up",
+    "volume_trend": -21.97,
+    "last_close": 62.6,
+    "last_date": "2026-08-25"
   }
 }
