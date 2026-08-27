@@ -1,95 +1,234 @@
 {
-  "analysis_date": "2026-07-21",
-  "metrics": {
-    "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
+  "timestamp": "2026-08-27T12:30:07.733591",
+  "latest_date": "2026-08-25",
+  "metrics": [
+    {
+      "ticker": "VNM",
+      "current_price": 62.6,
+      "last_date": "2026-08-25",
+      "return_30d": 11.39,
+      "return_full": 4.28,
+      "volatility": 1.73,
+      "trend": "sideway",
+      "volume_trend": -25.59,
+      "data_points": 30
     },
-    "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
+    {
+      "ticker": "FPT",
+      "current_price": 70.7,
+      "last_date": "2026-08-25",
+      "return_30d": 5.84,
+      "return_full": -3.53,
+      "volatility": 2.04,
+      "trend": "sideway",
+      "volume_trend": -36.85,
+      "data_points": 30
+    },
+    {
+      "ticker": "MSN",
+      "current_price": 69.5,
+      "last_date": "2026-08-25",
+      "return_30d": 2.21,
+      "return_full": -11.13,
+      "volatility": 1.68,
+      "trend": "sideway",
+      "volume_trend": 8.89,
+      "data_points": 30
+    },
+    {
+      "ticker": "VIC",
+      "current_price": 220.5,
+      "last_date": "2026-08-25",
+      "return_30d": 1.61,
+      "return_full": 2.8,
+      "volatility": 2.62,
+      "trend": "sideway",
+      "volume_trend": 16.73,
+      "data_points": 30
+    },
+    {
+      "ticker": "VCB",
+      "current_price": 59.4,
+      "last_date": "2026-08-25",
+      "return_30d": 0.34,
+      "return_full": -5.41,
       "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
+      "trend": "sideway",
+      "volume_trend": -17.21,
+      "data_points": 30
     },
-    "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
+    {
+      "ticker": "TCB",
+      "current_price": 31.3,
+      "last_date": "2026-08-25",
+      "return_30d": -0.63,
+      "return_full": -4.02,
+      "volatility": 2.05,
+      "trend": "sideway",
+      "volume_trend": -23.88,
+      "data_points": 30
     },
-    "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
+    {
+      "ticker": "HPG",
+      "current_price": 21.8,
+      "last_date": "2026-08-25",
+      "return_30d": -2.68,
+      "return_full": -12.17,
+      "volatility": 1.94,
+      "trend": "sideway",
+      "volume_trend": -16.5,
+      "data_points": 30
     },
-    "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
+    {
+      "ticker": "BID",
+      "current_price": 36.7,
+      "last_date": "2026-08-25",
+      "return_30d": -6.02,
+      "return_full": -10.75,
+      "volatility": 2.34,
+      "trend": "sideway",
+      "volume_trend": -23.95,
+      "data_points": 30
     },
-    "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
+    {
+      "ticker": "MBB",
+      "current_price": 20.65,
+      "last_date": "2026-08-25",
+      "return_30d": -13.78,
+      "return_full": -18.64,
+      "volatility": 3.53,
+      "trend": "sideway",
+      "volume_trend": -28.41,
+      "data_points": 30
     },
-    "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
-      "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
-    },
-    "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
+    {
+      "ticker": "VHM",
+      "current_price": 73.6,
+      "last_date": "2026-08-25",
+      "return_30d": -45.88,
+      "return_full": -48.71,
+      "volatility": 9.67,
       "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
-    },
-    "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
-    },
-    "BID": {
-      "return_30d": -12.3,
-      "return_full": -10.51,
-      "volatility": 1.4,
-      "trend": "down",
-      "volume_trend": 1.62,
-      "latest_close": 36.8,
-      "data_points": 22
+      "volume_trend": -13.7,
+      "data_points": 30
     }
+  ],
+  "classification": {
+    "top_picks": [
+      {
+        "ticker": "VNM",
+        "current_price": 62.6,
+        "last_date": "2026-08-25",
+        "return_30d": 11.39,
+        "return_full": 4.28,
+        "volatility": 1.73,
+        "trend": "sideway",
+        "volume_trend": -25.59,
+        "data_points": 30
+      },
+      {
+        "ticker": "FPT",
+        "current_price": 70.7,
+        "last_date": "2026-08-25",
+        "return_30d": 5.84,
+        "return_full": -3.53,
+        "volatility": 2.04,
+        "trend": "sideway",
+        "volume_trend": -36.85,
+        "data_points": 30
+      },
+      {
+        "ticker": "MSN",
+        "current_price": 69.5,
+        "last_date": "2026-08-25",
+        "return_30d": 2.21,
+        "return_full": -11.13,
+        "volatility": 1.68,
+        "trend": "sideway",
+        "volume_trend": 8.89,
+        "data_points": 30
+      }
+    ],
+    "watch": [
+      {
+        "ticker": "VIC",
+        "current_price": 220.5,
+        "last_date": "2026-08-25",
+        "return_30d": 1.61,
+        "return_full": 2.8,
+        "volatility": 2.62,
+        "trend": "sideway",
+        "volume_trend": 16.73,
+        "data_points": 30
+      },
+      {
+        "ticker": "VCB",
+        "current_price": 59.4,
+        "last_date": "2026-08-25",
+        "return_30d": 0.34,
+        "return_full": -5.41,
+        "volatility": 1.8,
+        "trend": "sideway",
+        "volume_trend": -17.21,
+        "data_points": 30
+      },
+      {
+        "ticker": "TCB",
+        "current_price": 31.3,
+        "last_date": "2026-08-25",
+        "return_30d": -0.63,
+        "return_full": -4.02,
+        "volatility": 2.05,
+        "trend": "sideway",
+        "volume_trend": -23.88,
+        "data_points": 30
+      },
+      {
+        "ticker": "HPG",
+        "current_price": 21.8,
+        "last_date": "2026-08-25",
+        "return_30d": -2.68,
+        "return_full": -12.17,
+        "volatility": 1.94,
+        "trend": "sideway",
+        "volume_trend": -16.5,
+        "data_points": 30
+      }
+    ],
+    "avoid": [
+      {
+        "ticker": "BID",
+        "current_price": 36.7,
+        "last_date": "2026-08-25",
+        "return_30d": -6.02,
+        "return_full": -10.75,
+        "volatility": 2.34,
+        "trend": "sideway",
+        "volume_trend": -23.95,
+        "data_points": 30
+      },
+      {
+        "ticker": "MBB",
+        "current_price": 20.65,
+        "last_date": "2026-08-25",
+        "return_30d": -13.78,
+        "return_full": -18.64,
+        "volatility": 3.53,
+        "trend": "sideway",
+        "volume_trend": -28.41,
+        "data_points": 30
+      },
+      {
+        "ticker": "VHM",
+        "current_price": 73.6,
+        "last_date": "2026-08-25",
+        "return_30d": -45.88,
+        "return_full": -48.71,
+        "volatility": 9.67,
+        "trend": "down",
+        "volume_trend": -13.7,
+        "data_points": 30
+      }
+    ]
   }
 }
