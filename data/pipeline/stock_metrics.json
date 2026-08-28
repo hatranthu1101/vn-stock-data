@@ -1,95 +1,127 @@
 {
-  "analysis_date": "2026-07-21",
+  "latest_date": "2026-08-26",
   "metrics": {
-    "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
-    },
-    "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
-      "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
-    },
-    "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
-    },
-    "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
-    },
-    "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
-    },
-    "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
-    },
-    "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
-      "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
+    "BID": {
+      "return_full": -10.26,
+      "return_30d": -5.02,
+      "volatility": 2.34,
+      "trend": "sideway",
+      "volume_trend": 0.79,
+      "latest_close": 36.9,
+      "latest_date": "2026-08-26",
+      "classification": "avoid",
+      "score": -1.0
     },
     "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
+      "return_full": -0.94,
+      "return_30d": 6.76,
+      "volatility": 2.07,
+      "trend": "up",
+      "volume_trend": 0.8,
+      "latest_close": 72.6,
+      "latest_date": "2026-08-26",
+      "classification": "buy",
+      "score": 3.2
+    },
+    "HPG": {
+      "return_full": -11.16,
+      "return_30d": -0.68,
+      "volatility": 1.95,
+      "trend": "up",
+      "volume_trend": 0.84,
+      "latest_close": 22.05,
+      "latest_date": "2026-08-26",
+      "classification": "watch",
+      "score": 0.77
+    },
+    "MBB": {
+      "return_full": -17.06,
+      "return_30d": -12.84,
+      "volatility": 3.55,
       "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
+      "volume_trend": 0.82,
+      "latest_close": 21.05,
+      "latest_date": "2026-08-26",
+      "classification": "avoid",
+      "score": -3.82
     },
     "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
+      "return_full": -10.36,
+      "return_30d": 3.09,
+      "volatility": 1.69,
+      "trend": "up",
+      "volume_trend": 1.1,
+      "latest_close": 70.1,
+      "latest_date": "2026-08-26",
+      "classification": "watch",
+      "score": 2.15
     },
-    "BID": {
-      "return_30d": -12.3,
-      "return_full": -10.51,
-      "volatility": 1.4,
+    "TCB": {
+      "return_full": 2.58,
+      "return_30d": 4.86,
+      "volatility": 2.4,
+      "trend": "up",
+      "volume_trend": 0.98,
+      "latest_close": 33.45,
+      "latest_date": "2026-08-26",
+      "classification": "buy",
+      "score": 2.43
+    },
+    "VCB": {
+      "return_full": -3.98,
+      "return_30d": 1.52,
+      "volatility": 1.82,
+      "trend": "up",
+      "volume_trend": 0.93,
+      "latest_close": 60.3,
+      "latest_date": "2026-08-26",
+      "classification": "watch",
+      "score": 1.54
+    },
+    "VHM": {
+      "return_full": -48.71,
+      "return_30d": -48.46,
+      "volatility": 9.6,
       "trend": "down",
-      "volume_trend": 1.62,
-      "latest_close": 36.8,
-      "data_points": 22
+      "volume_trend": 0.87,
+      "latest_close": 73.6,
+      "latest_date": "2026-08-26",
+      "classification": "avoid",
+      "score": -5.57
+    },
+    "VIC": {
+      "return_full": 7.23,
+      "return_30d": 3.14,
+      "volatility": 2.69,
+      "trend": "down",
+      "volume_trend": 1.22,
+      "latest_close": 230.0,
+      "latest_date": "2026-08-26",
+      "classification": "avoid",
+      "score": -0.15
+    },
+    "VNM": {
+      "return_full": 4.61,
+      "return_30d": 11.74,
+      "volatility": 1.72,
+      "trend": "up",
+      "volume_trend": 0.73,
+      "latest_close": 62.8,
+      "latest_date": "2026-08-26",
+      "classification": "buy",
+      "score": 5.32
     }
-  }
+  },
+  "ranking": [
+    "VNM",
+    "FPT",
+    "TCB",
+    "MSN",
+    "VCB",
+    "HPG",
+    "VIC",
+    "BID",
+    "MBB",
+    "VHM"
+  ]
 }
