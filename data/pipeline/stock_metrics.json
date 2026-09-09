@@ -1,95 +1,95 @@
 {
-  "analysis_date": "2026-07-21",
+  "latest_date": "2026-09-07",
   "metrics": {
     "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
+      "return_full": -7.64,
+      "return_30d": 7.41,
+      "volatility": 1.41,
+      "trend": "Sideway",
+      "vol_trend_ratio": 0.94,
+      "latest_close": 58.0,
+      "data_points": 92
     },
     "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
-      "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
+      "return_full": 14.22,
+      "return_30d": 14.49,
+      "volatility": 2.64,
+      "trend": "Up",
+      "vol_trend_ratio": 2.0,
+      "latest_close": 245.0,
+      "data_points": 92
     },
     "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
+      "return_full": -48.08,
+      "return_30d": -43.56,
+      "volatility": 6.04,
+      "trend": "Down",
+      "vol_trend_ratio": 1.35,
+      "latest_close": 74.5,
+      "data_points": 92
     },
     "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
+      "return_full": -13.17,
+      "return_30d": 3.61,
+      "volatility": 1.43,
+      "trend": "Sideway",
+      "vol_trend_ratio": 0.92,
+      "latest_close": 21.55,
+      "data_points": 92
     },
     "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
+      "return_full": -2.18,
+      "return_30d": 9.06,
+      "volatility": 1.84,
+      "trend": "Sideway",
+      "vol_trend_ratio": 1.73,
+      "latest_close": 31.9,
+      "data_points": 92
     },
     "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
+      "return_full": -20.41,
+      "return_30d": -8.39,
+      "volatility": 2.18,
+      "trend": "Sideway",
+      "vol_trend_ratio": 0.84,
+      "latest_close": 20.2,
+      "data_points": 92
     },
     "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
-      "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
+      "return_full": 1.12,
+      "return_30d": 5.02,
+      "volatility": 1.23,
+      "trend": "Sideway",
+      "vol_trend_ratio": 0.75,
+      "latest_close": 60.7,
+      "data_points": 92
     },
     "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
-      "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
+      "return_full": -1.21,
+      "return_30d": 11.9,
+      "volatility": 1.83,
+      "trend": "Sideway",
+      "vol_trend_ratio": 0.72,
+      "latest_close": 72.4,
+      "data_points": 92
     },
     "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
+      "return_full": -12.28,
+      "return_30d": 7.19,
+      "volatility": 1.42,
+      "trend": "Sideway",
+      "vol_trend_ratio": 0.96,
+      "latest_close": 68.6,
+      "data_points": 92
     },
     "BID": {
-      "return_30d": -12.3,
-      "return_full": -10.51,
-      "volatility": 1.4,
-      "trend": "down",
-      "volume_trend": 1.62,
-      "latest_close": 36.8,
-      "data_points": 22
+      "return_full": -12.45,
+      "return_30d": 0.0,
+      "volatility": 1.84,
+      "trend": "Sideway",
+      "vol_trend_ratio": 0.61,
+      "latest_close": 36.0,
+      "data_points": 92
     }
   }
 }

@@ -1,0 +1,191 @@
+{
+  "latest_date": "2026-09-07",
+  "top_picks": [
+    {
+      "ticker": "VIC",
+      "return_30d": 14.49,
+      "volatility": 2.64,
+      "trend": "Up",
+      "vol_trend": 2.0,
+      "latest_close": 245.0,
+      "score": 9.925
+    },
+    {
+      "ticker": "FPT",
+      "return_30d": 11.9,
+      "volatility": 1.83,
+      "trend": "Sideway",
+      "vol_trend": 0.72,
+      "latest_close": 72.4,
+      "score": 5.035
+    },
+    {
+      "ticker": "TCB",
+      "return_30d": 9.06,
+      "volatility": 1.84,
+      "trend": "Sideway",
+      "vol_trend": 1.73,
+      "latest_close": 31.9,
+      "score": 3.6100000000000003
+    }
+  ],
+  "mid_picks": [
+    {
+      "ticker": "VCB",
+      "return_30d": 7.41,
+      "volatility": 1.41,
+      "trend": "Sideway",
+      "vol_trend": 0.94,
+      "latest_close": 58.0,
+      "score": 3.0
+    },
+    {
+      "ticker": "MSN",
+      "return_30d": 7.19,
+      "volatility": 1.42,
+      "trend": "Sideway",
+      "vol_trend": 0.96,
+      "latest_close": 68.6,
+      "score": 2.8850000000000002
+    },
+    {
+      "ticker": "VNM",
+      "return_30d": 5.02,
+      "volatility": 1.23,
+      "trend": "Sideway",
+      "vol_trend": 0.75,
+      "latest_close": 60.7,
+      "score": 1.8949999999999998
+    },
+    {
+      "ticker": "HPG",
+      "return_30d": 3.61,
+      "volatility": 1.43,
+      "trend": "Sideway",
+      "vol_trend": 0.92,
+      "latest_close": 21.55,
+      "score": 1.0899999999999999
+    }
+  ],
+  "bottom_picks": [
+    {
+      "ticker": "BID",
+      "return_30d": 0.0,
+      "volatility": 1.84,
+      "trend": "Sideway",
+      "vol_trend": 0.61,
+      "latest_close": 36.0,
+      "score": -0.92
+    },
+    {
+      "ticker": "MBB",
+      "return_30d": -8.39,
+      "volatility": 2.18,
+      "trend": "Sideway",
+      "vol_trend": 0.84,
+      "latest_close": 20.2,
+      "score": -5.285
+    },
+    {
+      "ticker": "VHM",
+      "return_30d": -43.56,
+      "volatility": 6.04,
+      "trend": "Down",
+      "vol_trend": 1.35,
+      "latest_close": 74.5,
+      "score": -28.8
+    }
+  ],
+  "all_stocks": [
+    {
+      "ticker": "VIC",
+      "return_30d": 14.49,
+      "volatility": 2.64,
+      "trend": "Up",
+      "vol_trend": 2.0,
+      "latest_close": 245.0,
+      "score": 9.925
+    },
+    {
+      "ticker": "FPT",
+      "return_30d": 11.9,
+      "volatility": 1.83,
+      "trend": "Sideway",
+      "vol_trend": 0.72,
+      "latest_close": 72.4,
+      "score": 5.035
+    },
+    {
+      "ticker": "TCB",
+      "return_30d": 9.06,
+      "volatility": 1.84,
+      "trend": "Sideway",
+      "vol_trend": 1.73,
+      "latest_close": 31.9,
+      "score": 3.6100000000000003
+    },
+    {
+      "ticker": "VCB",
+      "return_30d": 7.41,
+      "volatility": 1.41,
+      "trend": "Sideway",
+      "vol_trend": 0.94,
+      "latest_close": 58.0,
+      "score": 3.0
+    },
+    {
+      "ticker": "MSN",
+      "return_30d": 7.19,
+      "volatility": 1.42,
+      "trend": "Sideway",
+      "vol_trend": 0.96,
+      "latest_close": 68.6,
+      "score": 2.8850000000000002
+    },
+    {
+      "ticker": "VNM",
+      "return_30d": 5.02,
+      "volatility": 1.23,
+      "trend": "Sideway",
+      "vol_trend": 0.75,
+      "latest_close": 60.7,
+      "score": 1.8949999999999998
+    },
+    {
+      "ticker": "HPG",
+      "return_30d": 3.61,
+      "volatility": 1.43,
+      "trend": "Sideway",
+      "vol_trend": 0.92,
+      "latest_close": 21.55,
+      "score": 1.0899999999999999
+    },
+    {
+      "ticker": "BID",
+      "return_30d": 0.0,
+      "volatility": 1.84,
+      "trend": "Sideway",
+      "vol_trend": 0.61,
+      "latest_close": 36.0,
+      "score": -0.92
+    },
+    {
+      "ticker": "MBB",
+      "return_30d": -8.39,
+      "volatility": 2.18,
+      "trend": "Sideway",
+      "vol_trend": 0.84,
+      "latest_close": 20.2,
+      "score": -5.285
+    },
+    {
+      "ticker": "VHM",
+      "return_30d": -43.56,
+      "volatility": 6.04,
+      "trend": "Down",
+      "vol_trend": 1.35,
+      "latest_close": 74.5,
+      "score": -28.8
+    }
+  ]
+}

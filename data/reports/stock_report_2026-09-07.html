@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VN Stock Daily Briefing</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f8f9fa;
+            padding: 20px;
+            color: #2c3e50;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            page-break-after: always;
+        }
+        header {
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .date {
+            font-size: 13px;
+            color: #7f8c8d;
+            font-weight: 500;
+        }
+        h2 {
+            font-size: 16px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            color: #2c3e50;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+        thead {
+            background: #ecf0f1;
+        }
+        th {
+            padding: 8px;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            border-bottom: 2px solid #bdc3c7;
+        }
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        tr:hover {
+            background: #f8f9fa;
+        }
+        .positive {
+            color: #27ae60;
+            font-weight: 500;
+        }
+        .negative {
+            color: #e74c3c;
+            font-weight: 500;
+        }
+        .neutral {
+            color: #7f8c8d;
+        }
+        .recommendation {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .buy {
+            background: #d4edda;
+            color: #155724;
+        }
+        .hold {
+            background: #fff3cd;
+            color: #856404;
+        }
+        .sell {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            margin-bottom: 20px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            padding: 10px;
+        }
+        .top-picks {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .pick-card {
+            background: #f8f9fa;
+            border-left: 4px solid #27ae60;
+            padding: 12px;
+            border-radius: 4px;
+        }
+        .pick-ticker {
+            font-size: 18px;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 5px;
+        }
+        .pick-metric {
+            font-size: 12px;
+            margin: 3px 0;
+            color: #7f8c8d;
+        }
+        .pick-reason {
+            font-size: 12px;
+            margin-top: 8px;
+            line-height: 1.4;
+            color: #2c3e50;
+        }
+        .footer {
+            font-size: 11px;
+            color: #95a5a6;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #ecf0f1;
+            text-align: center;
+        }
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📈 VN Stock Daily Briefing</h1>
+            <div class="date">Data ngày: 2026-09-07</div>
+        </header>
+
+        <h2>🎯 Top Picks Hôm Nay</h2>
+        <div class="top-picks">
+
+        <div class="pick-card">
+            <div class="pick-ticker">VIC</div>
+            <div class="pick-metric">Return 30D: <span class="positive">+14.5%</span></div>
+            <div class="pick-metric">Volatility: 2.64</div>
+            <div class="pick-metric">Trend: Up</div>
+            <div class="pick-reason">Mã chứng chỉ mạnh nhất với lợi suất +14.5% trong 30 ngày gần nhất. Xu hướng tăng rõ ràng, thích hợp cho nhà đầu tư tích cực.</div>
+        </div>
+
+        <div class="pick-card">
+            <div class="pick-ticker">FPT</div>
+            <div class="pick-metric">Return 30D: <span class="positive">+11.9%</span></div>
+            <div class="pick-metric">Volatility: 1.83</div>
+            <div class="pick-metric">Trend: Sideway</div>
+            <div class="pick-reason">Hiệu suất tốt với +11.9% lợi suất 30 ngày. Độ biến động thấp, phù hợp với các nhà đầu tư tìm kiếm cân bằng rủi ro-lợi nhuận.</div>
+        </div>
+
+        <div class="pick-card">
+            <div class="pick-ticker">TCB</div>
+            <div class="pick-metric">Return 30D: <span class="positive">+9.1%</span></div>
+            <div class="pick-metric">Volatility: 1.84</div>
+            <div class="pick-metric">Trend: Sideway</div>
+            <div class="pick-reason">Tăng trưởng ổn định +9.1% trong 30 ngày, khối lượng giao dịch cao. Tín hiệu tích cực cho xu hướng tăng tiếp.</div>
+        </div>
+
+        </div>
+
+        <h2>📊 Biểu đồ So Sánh Hiệu Suất</h2>
+        <div class="chart-container">
+            <canvas id="performanceChart"></canvas>
+        </div>
+
+        <h2>📋 Bảng Tổng Hợp 10 Mã</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã</th>
+                    <th>Return 30D</th>
+                    <th>Volatility</th>
+                    <th>Trend</th>
+                    <th>Khuyến Nghị</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td><strong>VIC</strong></td>
+                    <td><span class="positive">+14.49%</span></td>
+                    <td>2.64</td>
+                    <td>Up</td>
+                    <td><span class="recommendation buy">✓ Xem xét</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>FPT</strong></td>
+                    <td><span class="positive">+11.90%</span></td>
+                    <td>1.83</td>
+                    <td>Sideway</td>
+                    <td><span class="recommendation buy">✓ Xem xét</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>TCB</strong></td>
+                    <td><span class="positive">+9.06%</span></td>
+                    <td>1.84</td>
+                    <td>Sideway</td>
+                    <td><span class="recommendation buy">✓ Xem xét</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>VCB</strong></td>
+                    <td><span class="positive">+7.41%</span></td>
+                    <td>1.41</td>
+                    <td>Sideway</td>
+                    <td><span class="recommendation hold">◐ Theo dõi</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>MSN</strong></td>
+                    <td><span class="positive">+7.19%</span></td>
+                    <td>1.42</td>
+                    <td>Sideway</td>
+                    <td><span class="recommendation hold">◐ Theo dõi</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>VNM</strong></td>
+                    <td><span class="positive">+5.02%</span></td>
+                    <td>1.23</td>
+                    <td>Sideway</td>
+                    <td><span class="recommendation hold">◐ Theo dõi</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>HPG</strong></td>
+                    <td><span class="positive">+3.61%</span></td>
+                    <td>1.43</td>
+                    <td>Sideway</td>
+                    <td><span class="recommendation hold">◐ Theo dõi</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>BID</strong></td>
+                    <td><span class="neutral">+0.00%</span></td>
+                    <td>1.84</td>
+                    <td>Sideway</td>
+                    <td><span class="recommendation sell">✗ Chờ</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>MBB</strong></td>
+                    <td><span class="negative">-8.39%</span></td>
+                    <td>2.18</td>
+                    <td>Sideway</td>
+                    <td><span class="recommendation sell">✗ Chờ</span></td>
+                </tr>
+
+                <tr>
+                    <td><strong>VHM</strong></td>
+                    <td><span class="negative">-43.56%</span></td>
+                    <td>6.04</td>
+                    <td>Down</td>
+                    <td><span class="recommendation sell">✗ Chờ</span></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <p>💡 Phân tích dựa trên dữ liệu lịch sử. Không phải lời khuyên đầu tư. Tham khảo chuyên gia tài chính trước khi quyết định.</p>
+        </div>
+    </div>
+
+    <script>
+        // Chart data
+        const chartLabels = ["04-23", "04-24", "04-28", "04-29", "05-04", "05-05", "05-06", "05-07", "05-08", "05-11", "05-12", "05-13", "05-14", "05-15", "05-18", "05-19", "05-20", "05-21", "05-22", "05-25", "05-26", "05-27", "05-28", "05-29", "06-01", "06-02", "06-03", "06-04", "06-05", "06-08", "06-09", "06-10", "06-11", "06-12", "06-15", "06-16", "06-17", "06-18", "06-19", "06-22", "06-23", "06-24", "06-25", "06-26", "06-29", "06-30", "07-01", "07-02", "07-03", "07-06", "07-07", "07-08", "07-09", "07-10", "07-13", "07-14", "07-15", "07-16", "07-17", "07-20", "07-21", "07-22", "07-23", "07-24", "07-27", "07-28", "07-29", "07-30", "07-31", "08-03", "08-04", "08-05", "08-06", "08-07", "08-10", "08-11", "08-12", "08-13", "08-14", "08-17", "08-18", "08-19", "08-20", "08-21", "08-24", "08-25", "08-26", "08-27", "08-28", "09-03", "09-04", "09-07"]
+;
+        const chartData = {
+
+            'VIC': [100.0, 98.88111888111888, 105.12820512820514, 99.76689976689977, 98.83449883449883, 102.33100233100234, 102.33100233100234, 104.42890442890442, 105.36130536130537, 103.96270396270397, 103.4965034965035, 103.03030303030303, 107.13286713286713, 106.2937062937063, 104.8951048951049, 104.94172494172493, 105.68764568764568, 101.95804195804195, 100.93240093240092, 102.00466200466201, 99.3006993006993, 98.27505827505829, 98.27505827505829, 98.50815850815852, 95.52447552447553, 95.52447552447553, 92.12121212121211, 93.33333333333333, 96.5034965034965, 90.9090909090909, 90.06993006993007, 91.37529137529138, 91.37529137529138, 91.14219114219114, 89.79020979020979, 90.44289044289044, 89.5104895104895, 95.75757575757576, 95.8041958041958, 102.47086247086247, 106.75990675990677, 107.45920745920745, 104.8951048951049, 106.2937062937063, 101.25874125874125, 102.56410256410255, 101.21212121212122, 102.70396270396272, 102.70396270396272, 102.70396270396272, 102.70396270396272, 102.89044289044288, 103.03030303030303, 103.96270396270397, 103.26340326340326, 102.09790209790211, 101.16550116550115, 103.96270396270397, 102.56410256410255, 102.56410256410255, 101.30536130536132, 94.21911421911422, 99.76689976689977, 99.34731934731934, 99.53379953379954, 99.67365967365967, 102.28438228438227, 102.56410256410255, 99.81351981351982, 99.3006993006993, 101.63170163170163, 102.56410256410255, 102.00466200466201, 100.23310023310023, 97.2027972027972, 97.2027972027972, 100.46620046620048, 96.92307692307692, 93.42657342657344, 92.3076923076923, 93.24009324009323, 93.24009324009323, 94.17249417249417, 95.57109557109557, 100.0, 102.79720279720279, 107.22610722610723, 110.02331002331003, 110.02331002331003, 113.98601398601397, 119.3939393939394, 114.21911421911422],
+
+            'FPT': [100.0, 98.78564606358302, 100.13644426251875, 101.61004229772136, 99.1949788511393, 100.0, 98.64920180106425, 98.25351343975986, 96.76627097830536, 94.21476326920451, 95.01978441806521, 95.15622868058396, 99.45422294992495, 98.11706917724108, 100.80502114886067, 100.2728885250375, 104.57088279437849, 102.9608404966571, 101.0779096738982, 98.92209032610178, 100.2728885250375, 99.05853458862053, 97.1483149133579, 97.69409196343291, 99.46786737617683, 102.06030836403328, 104.37986082685222, 103.83408377677716, 102.3331968890708, 99.46786737617683, 100.55942147632693, 101.24164278892071, 99.74075590121434, 100.2865329512894, 100.42297721380815, 99.87720016373312, 98.64920180106425, 97.69409196343291, 97.55764770091416, 96.32964933824532, 96.60253786328283, 96.60253786328283, 96.87542638832036, 96.60253786328283, 96.0567608132078, 95.78387228817029, 99.46786737617683, 98.92209032610178, 98.64920180106425, 99.60431163869559, 99.87720016373312, 98.37631327602672, 98.37631327602672, 96.32964933824532, 96.19320507572657, 95.92031655068904, 91.14476736253239, 92.78209851275753, 91.41765588756992, 91.55410015008867, 88.41588211215718, 88.14299358711965, 88.27943784963843, 85.82344112430071, 84.8683312866694, 85.95988538681948, 88.82521489971346, 91.41765588756992, 91.55410015008867, 97.83053622595169, 97.55764770091416, 95.92031655068904, 96.46609360076408, 96.60253786328283, 97.96698048847044, 97.1483149133579, 96.60253786328283, 94.41942966298267, 93.19143130031381, 93.8736526129076, 94.14654113794514, 94.01009687542638, 95.23809523809523, 98.23986901350797, 97.42120343839541, 96.46609360076408, 99.05853458862053, 98.5127575385455, 99.87720016373312, 98.5127575385455, 99.33142311365806, 98.78564606358302],
+
+            'TCB': [100.0, 102.85188592456302, 103.9251763262803, 101.6559337626495, 100.76663600122662, 100.0, 101.80926096289483, 101.22661760196259, 101.6559337626495, 101.50260656240417, 101.50260656240417, 100.91996320147194, 102.11591536338547, 102.2692425636308, 102.11591536338547, 99.96933455995094, 99.50935295921498, 98.89604415823368, 98.74271695798835, 99.81600735970561, 100.88929776142288, 103.18920576510273, 99.96933455995094, 100.42931616068691, 99.20269855872432, 97.8227537565164, 96.74946335479915, 96.44280895430849, 97.2094449555351, 94.60288255136462, 94.75620975160993, 94.90953695185526, 94.60288255136462, 95.8295001533272, 97.2094449555351, 97.36277215578045, 96.44280895430849, 95.67617295308187, 94.90953695185526, 94.75620975160993, 98.28273535725238, 99.6626801594603, 102.42256976387611, 102.42256976387611, 103.6491873658387, 102.72922416436676, 105.18245936829193, 103.80251456608403, 103.03587856485741, 103.49586016559338, 103.80251456608403, 103.49586016559338, 101.6559337626495, 99.35602575896964, 99.20269855872432, 98.74271695798835, 96.59613615455382, 97.8227537565164, 96.44280895430849, 91.84299294694878, 91.38301134621281, 88.92977614228764, 89.69641214351427, 87.70315854032505, 86.62986813860779, 87.3965041398344, 87.08984973934376, 89.84973934375958, 88.77644894204232, 91.84299294694878, 90.92302974547685, 90.92302974547685, 89.54308494326894, 91.07635694572217, 96.13615455381786, 95.06286415210057, 96.59613615455382, 97.2094449555351, 98.12940815700706, 97.51609935602576, 94.60288255136462, 95.06286415210057, 95.06286415210057, 97.05611775528979, 96.44280895430849, 95.98282735357253, 102.57589696412144, 104.56915056731064, 102.42256976387611, 98.4360625574977, 99.96933455995094, 97.8227537565164],
+
+        };
+
+        const ctx = document.getElementById('performanceChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: chartLabels,
+                datasets: [
+                    {
+                        label: 'VIC',
+                        data: chartData['VIC'],
+                        borderColor: '#e74c3c',
+                        backgroundColor: 'rgba(231, 76, 60, 0.05)',
+                        tension: 0.4,
+                        pointRadius: 0,
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'FPT',
+                        data: chartData['FPT'],
+                        borderColor: '#3498db',
+                        backgroundColor: 'rgba(52, 152, 219, 0.05)',
+                        tension: 0.4,
+                        pointRadius: 0,
+                        borderWidth: 2
+                    },
+                    {
+                        label: 'TCB',
+                        data: chartData['TCB'],
+                        borderColor: '#27ae60',
+                        backgroundColor: 'rgba(39, 174, 96, 0.05)',
+                        tension: 0.4,
+                        pointRadius: 0,
+                        borderWidth: 2
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Normalized Price (Index = 100)'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
