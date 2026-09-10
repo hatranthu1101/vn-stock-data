@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VN Stock Daily Briefing - 2026-09-08</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header { text-align: center; margin-bottom: 30px; }
+        h1 { color: #1e88e5; font-size: 28px; margin-bottom: 5px; }
+        .date { color: #666; font-size: 14px; }
+
+        .section { margin-bottom: 30px; }
+        .section h2 { font-size: 18px; color: #2c3e50; border-bottom: 2px solid #1e88e5; padding-bottom: 10px; margin-bottom: 15px; }
+
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th { background: #f0f0f0; padding: 10px; text-align: left; font-weight: 600; border-bottom: 1px solid #ddd; }
+        td { padding: 8px 10px; border-bottom: 1px solid #eee; }
+        tr:hover { background: #f9f9f9; }
+
+        .up { color: #27ae60; font-weight: 600; }
+        .down { color: #e74c3c; font-weight: 600; }
+        .neutral { color: #95a5a6; }
+
+        .badge { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+        .badge-top { background: #d4edda; color: #155724; }
+        .badge-mid { background: #fff3cd; color: #856404; }
+        .badge-bottom { background: #f8d7da; color: #721c24; }
+
+        .chart-container { position: relative; height: 250px; margin-bottom: 20px; }
+
+        .picks { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-top: 15px; }
+        .pick-card {
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 12px;
+        }
+        .pick-card.top-1 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .pick-card.top-2 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .pick-card.top-3 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+
+        .pick-ticker { font-size: 16px; font-weight: bold; margin-bottom: 5px; }
+        .pick-stat { margin: 3px 0; font-size: 11px; opacity: 0.9; }
+        .pick-reason { font-size: 11px; margin-top: 8px; font-style: italic; line-height: 1.3; }
+
+        @media print {
+            body { padding: 0; background: white; }
+            .container { box-shadow: none; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 VN Stock Daily Briefing</h1>
+            <div class="date">Ngày phân tích: 2026-09-08</div>
+        </div>
+
+        <div class="section">
+            <h2>📈 Bảng So Sánh 10 Mã</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mã</th>
+                        <th>Return 30D (%)</th>
+                        <th>Volatility (%)</th>
+                        <th>Trend</th>
+                        <th>Vol Trend (%)</th>
+                        <th>Đánh giá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>VIC</strong></td>
+                        <td class="up">+19.71%</td>
+                        <td>2.65%</td>
+                        <td>📈 UP</td>
+                        <td>+85.56%</td>
+                        <td><span class="badge badge-top">✅ Xem xét</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>TCB</strong></td>
+                        <td class="up">+1.91%</td>
+                        <td>1.84%</td>
+                        <td>➡️ SIDEWAY</td>
+                        <td>+66.17%</td>
+                        <td><span class="badge badge-top">✅ Xem xét</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>VHM</strong></td>
+                        <td class="up">+2.79%</td>
+                        <td>6.04%</td>
+                        <td>➡️ SIDEWAY</td>
+                        <td>+28.53%</td>
+                        <td><span class="badge badge-top">✅ Xem xét</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>MSN</strong></td>
+                        <td class="up">+1.03%</td>
+                        <td>1.42%</td>
+                        <td>➡️ SIDEWAY</td>
+                        <td>-8.49%</td>
+                        <td><span class="badge badge-mid">⚠️ Theo dõi</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>FPT</strong></td>
+                        <td class="up">+0.56%</td>
+                        <td>1.83%</td>
+                        <td>➡️ SIDEWAY</td>
+                        <td>-27.94%</td>
+                        <td><span class="badge badge-mid">⚠️ Theo dõi</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>MBB</strong></td>
+                        <td class="down">-0.25%</td>
+                        <td>2.18%</td>
+                        <td>➡️ SIDEWAY</td>
+                        <td>-18.13%</td>
+                        <td><span class="badge badge-mid">⚠️ Theo dõi</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>HPG</strong></td>
+                        <td class="down">-1.13%</td>
+                        <td>1.43%</td>
+                        <td>➡️ SIDEWAY</td>
+                        <td>-15.72%</td>
+                        <td><span class="badge badge-mid">⚠️ Theo dõi</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>VNM</strong></td>
+                        <td class="down">-1.77%</td>
+                        <td>1.23%</td>
+                        <td>➡️ SIDEWAY</td>
+                        <td>-30.27%</td>
+                        <td><span class="badge badge-bottom">❌ Tránh</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>VCB</strong></td>
+                        <td class="down">-3.65%</td>
+                        <td>1.41%</td>
+                        <td>➡️ SIDEWAY</td>
+                        <td>-12.47%</td>
+                        <td><span class="badge badge-bottom">❌ Tránh</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>BID</strong></td>
+                        <td class="down">-8.35%</td>
+                        <td>1.84%</td>
+                        <td>➡️ SIDEWAY</td>
+                        <td>-45.49%</td>
+                        <td><span class="badge badge-bottom">❌ Tránh</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>📊 Performance Chart (Top 3)</h2>
+            <div class="chart-container">
+                <canvas id="perfChart"></canvas>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⭐ Top Picks Hôm Nay</h2>
+            <div class="picks">
+                <div class="pick-card top-1">
+                    <div class="pick-ticker">1. VIC</div>
+                    <div class="pick-stat">Return 30D: +19.71%</div>
+                    <div class="pick-stat">Volatility: 2.65%</div>
+                    <div class="pick-stat">Trend: UP</div>
+                    <div class="pick-reason">Lợi nhuận 30D cao nhất (19.71%), xu hướng tăng rõ ràng.</div>
+                </div>
+                <div class="pick-card top-2">
+                    <div class="pick-ticker">2. TCB</div>
+                    <div class="pick-stat">Return 30D: +1.91%</div>
+                    <div class="pick-stat">Volatility: 1.84%</div>
+                    <div class="pick-stat">Trend: SIDEWAY</div>
+                    <div class="pick-reason">Tỷ lệ rủi ro-lợi nhuận cân bằng, volatility thấp.</div>
+                </div>
+                <div class="pick-card top-3">
+                    <div class="pick-ticker">3. VHM</div>
+                    <div class="pick-stat">Return 30D: +2.79%</div>
+                    <div class="pick-stat">Volatility: 6.04%</div>
+                    <div class="pick-stat">Trend: SIDEWAY</div>
+                    <div class="pick-reason">Lợi nhuận dương. Theo dõi tín hiệu phục hồi.</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="font-size: 11px; color: #999; margin-top: 30px; text-align: center;">
+            <p>Báo cáo được tạo tự động. Không phải lời khuyên đầu tư chuyên nghiệp.</p>
+        </div>
+    </div>
+
+    <script>
+        const chartData = {"VIC": [{"date": "2026-04-23", "normalized": 100.0}, {"date": "2026-04-24", "normalized": 98.88}, {"date": "2026-04-28", "normalized": 105.13}, {"date": "2026-04-29", "normalized": 99.77}, {"date": "2026-05-04", "normalized": 98.83}, {"date": "2026-05-05", "normalized": 102.33}, {"date": "2026-05-06", "normalized": 102.33}, {"date": "2026-05-07", "normalized": 104.43}, {"date": "2026-05-08", "normalized": 105.36}, {"date": "2026-05-11", "normalized": 103.96}, {"date": "2026-05-12", "normalized": 103.5}, {"date": "2026-05-13", "normalized": 103.03}, {"date": "2026-05-14", "normalized": 107.13}, {"date": "2026-05-15", "normalized": 106.29}, {"date": "2026-05-18", "normalized": 104.9}, {"date": "2026-05-19", "normalized": 104.94}, {"date": "2026-05-20", "normalized": 105.69}, {"date": "2026-05-21", "normalized": 101.96}, {"date": "2026-05-22", "normalized": 100.93}, {"date": "2026-05-25", "normalized": 102.0}, {"date": "2026-05-26", "normalized": 99.3}, {"date": "2026-05-27", "normalized": 98.28}, {"date": "2026-05-28", "normalized": 98.28}, {"date": "2026-05-29", "normalized": 98.51}, {"date": "2026-06-01", "normalized": 95.52}, {"date": "2026-06-02", "normalized": 95.52}, {"date": "2026-06-03", "normalized": 92.12}, {"date": "2026-06-04", "normalized": 93.33}, {"date": "2026-06-05", "normalized": 96.5}, {"date": "2026-06-08", "normalized": 90.91}, {"date": "2026-06-09", "normalized": 90.07}, {"date": "2026-06-10", "normalized": 91.38}, {"date": "2026-06-11", "normalized": 91.38}, {"date": "2026-06-12", "normalized": 91.14}, {"date": "2026-06-15", "normalized": 89.79}, {"date": "2026-06-16", "normalized": 90.44}, {"date": "2026-06-17", "normalized": 89.51}, {"date": "2026-06-18", "normalized": 95.76}, {"date": "2026-06-19", "normalized": 95.8}, {"date": "2026-06-22", "normalized": 102.47}, {"date": "2026-06-23", "normalized": 106.76}, {"date": "2026-06-24", "normalized": 107.46}, {"date": "2026-06-25", "normalized": 104.9}, {"date": "2026-06-26", "normalized": 106.29}, {"date": "2026-06-29", "normalized": 101.26}, {"date": "2026-06-30", "normalized": 102.56}, {"date": "2026-07-01", "normalized": 101.21}, {"date": "2026-07-02", "normalized": 102.7}, {"date": "2026-07-03", "normalized": 102.7}, {"date": "2026-07-06", "normalized": 102.7}, {"date": "2026-07-07", "normalized": 102.7}, {"date": "2026-07-08", "normalized": 102.89}, {"date": "2026-07-09", "normalized": 103.03}, {"date": "2026-07-10", "normalized": 103.96}, {"date": "2026-07-13", "normalized": 103.26}, {"date": "2026-07-14", "normalized": 102.1}, {"date": "2026-07-15", "normalized": 101.17}, {"date": "2026-07-16", "normalized": 103.96}, {"date": "2026-07-17", "normalized": 102.56}, {"date": "2026-07-20", "normalized": 102.56}, {"date": "2026-07-21", "normalized": 101.31}, {"date": "2026-07-22", "normalized": 94.22}, {"date": "2026-07-23", "normalized": 99.77}, {"date": "2026-07-24", "normalized": 99.35}, {"date": "2026-07-27", "normalized": 99.53}, {"date": "2026-07-28", "normalized": 99.67}, {"date": "2026-07-29", "normalized": 102.28}, {"date": "2026-07-30", "normalized": 102.56}, {"date": "2026-07-31", "normalized": 99.81}, {"date": "2026-08-03", "normalized": 99.3}, {"date": "2026-08-04", "normalized": 101.63}, {"date": "2026-08-05", "normalized": 102.56}, {"date": "2026-08-06", "normalized": 102.0}, {"date": "2026-08-07", "normalized": 100.23}, {"date": "2026-08-10", "normalized": 97.2}, {"date": "2026-08-11", "normalized": 97.2}, {"date": "2026-08-12", "normalized": 100.47}, {"date": "2026-08-13", "normalized": 96.92}, {"date": "2026-08-14", "normalized": 93.43}, {"date": "2026-08-17", "normalized": 92.31}, {"date": "2026-08-18", "normalized": 93.24}, {"date": "2026-08-19", "normalized": 93.24}, {"date": "2026-08-20", "normalized": 94.17}, {"date": "2026-08-21", "normalized": 95.57}, {"date": "2026-08-24", "normalized": 100.0}, {"date": "2026-08-25", "normalized": 102.8}, {"date": "2026-08-26", "normalized": 107.23}, {"date": "2026-08-27", "normalized": 110.02}, {"date": "2026-08-28", "normalized": 110.02}, {"date": "2026-09-03", "normalized": 113.99}, {"date": "2026-09-04", "normalized": 119.39}, {"date": "2026-09-07", "normalized": 114.22}, {"date": "2026-09-08", "normalized": 116.36}], "TCB": [{"date": "2026-04-23", "normalized": 100.0}, {"date": "2026-04-24", "normalized": 102.85}, {"date": "2026-04-28", "normalized": 103.93}, {"date": "2026-04-29", "normalized": 101.66}, {"date": "2026-05-04", "normalized": 100.77}, {"date": "2026-05-05", "normalized": 100.0}, {"date": "2026-05-06", "normalized": 101.81}, {"date": "2026-05-07", "normalized": 101.23}, {"date": "2026-05-08", "normalized": 101.66}, {"date": "2026-05-11", "normalized": 101.5}, {"date": "2026-05-12", "normalized": 101.5}, {"date": "2026-05-13", "normalized": 100.92}, {"date": "2026-05-14", "normalized": 102.12}, {"date": "2026-05-15", "normalized": 102.27}, {"date": "2026-05-18", "normalized": 102.12}, {"date": "2026-05-19", "normalized": 99.97}, {"date": "2026-05-20", "normalized": 99.51}, {"date": "2026-05-21", "normalized": 98.9}, {"date": "2026-05-22", "normalized": 98.74}, {"date": "2026-05-25", "normalized": 99.82}, {"date": "2026-05-26", "normalized": 100.89}, {"date": "2026-05-27", "normalized": 103.19}, {"date": "2026-05-28", "normalized": 99.97}, {"date": "2026-05-29", "normalized": 100.43}, {"date": "2026-06-01", "normalized": 99.2}, {"date": "2026-06-02", "normalized": 97.82}, {"date": "2026-06-03", "normalized": 96.75}, {"date": "2026-06-04", "normalized": 96.44}, {"date": "2026-06-05", "normalized": 97.21}, {"date": "2026-06-08", "normalized": 94.6}, {"date": "2026-06-09", "normalized": 94.76}, {"date": "2026-06-10", "normalized": 94.91}, {"date": "2026-06-11", "normalized": 94.6}, {"date": "2026-06-12", "normalized": 95.83}, {"date": "2026-06-15", "normalized": 97.21}, {"date": "2026-06-16", "normalized": 97.36}, {"date": "2026-06-17", "normalized": 96.44}, {"date": "2026-06-18", "normalized": 95.68}, {"date": "2026-06-19", "normalized": 94.91}, {"date": "2026-06-22", "normalized": 94.76}, {"date": "2026-06-23", "normalized": 98.28}, {"date": "2026-06-24", "normalized": 99.66}, {"date": "2026-06-25", "normalized": 102.42}, {"date": "2026-06-26", "normalized": 102.42}, {"date": "2026-06-29", "normalized": 103.65}, {"date": "2026-06-30", "normalized": 102.73}, {"date": "2026-07-01", "normalized": 105.18}, {"date": "2026-07-02", "normalized": 103.8}, {"date": "2026-07-03", "normalized": 103.04}, {"date": "2026-07-06", "normalized": 103.5}, {"date": "2026-07-07", "normalized": 103.8}, {"date": "2026-07-08", "normalized": 103.5}, {"date": "2026-07-09", "normalized": 101.66}, {"date": "2026-07-10", "normalized": 99.36}, {"date": "2026-07-13", "normalized": 99.2}, {"date": "2026-07-14", "normalized": 98.74}, {"date": "2026-07-15", "normalized": 96.6}, {"date": "2026-07-16", "normalized": 97.82}, {"date": "2026-07-17", "normalized": 96.44}, {"date": "2026-07-20", "normalized": 91.84}, {"date": "2026-07-21", "normalized": 91.38}, {"date": "2026-07-22", "normalized": 88.93}, {"date": "2026-07-23", "normalized": 89.7}, {"date": "2026-07-24", "normalized": 87.7}, {"date": "2026-07-27", "normalized": 86.63}, {"date": "2026-07-28", "normalized": 87.4}, {"date": "2026-07-29", "normalized": 87.09}, {"date": "2026-07-30", "normalized": 89.85}, {"date": "2026-07-31", "normalized": 88.78}, {"date": "2026-08-03", "normalized": 91.84}, {"date": "2026-08-04", "normalized": 90.92}, {"date": "2026-08-05", "normalized": 90.92}, {"date": "2026-08-06", "normalized": 89.54}, {"date": "2026-08-07", "normalized": 91.08}, {"date": "2026-08-10", "normalized": 96.14}, {"date": "2026-08-11", "normalized": 95.06}, {"date": "2026-08-12", "normalized": 96.6}, {"date": "2026-08-13", "normalized": 97.21}, {"date": "2026-08-14", "normalized": 98.13}, {"date": "2026-08-17", "normalized": 97.52}, {"date": "2026-08-18", "normalized": 94.6}, {"date": "2026-08-19", "normalized": 95.06}, {"date": "2026-08-20", "normalized": 95.06}, {"date": "2026-08-21", "normalized": 97.06}, {"date": "2026-08-24", "normalized": 96.44}, {"date": "2026-08-25", "normalized": 95.98}, {"date": "2026-08-26", "normalized": 102.58}, {"date": "2026-08-27", "normalized": 104.57}, {"date": "2026-08-28", "normalized": 102.42}, {"date": "2026-09-03", "normalized": 98.44}, {"date": "2026-09-04", "normalized": 99.97}, {"date": "2026-09-07", "normalized": 97.82}, {"date": "2026-09-08", "normalized": 97.98}], "VHM": [{"date": "2026-04-23", "normalized": 100.0}, {"date": "2026-04-24", "normalized": 94.77}, {"date": "2026-04-28", "normalized": 101.34}, {"date": "2026-04-29", "normalized": 97.99}, {"date": "2026-05-04", "normalized": 95.3}, {"date": "2026-05-05", "normalized": 101.48}, {"date": "2026-05-06", "normalized": 101.34}, {"date": "2026-05-07", "normalized": 108.38}, {"date": "2026-05-08", "normalized": 110.06}, {"date": "2026-05-11", "normalized": 108.05}, {"date": "2026-05-12", "normalized": 107.51}, {"date": "2026-05-13", "normalized": 102.35}, {"date": "2026-05-14", "normalized": 105.37}, {"date": "2026-05-15", "normalized": 106.04}, {"date": "2026-05-18", "normalized": 103.35}, {"date": "2026-05-19", "normalized": 105.37}, {"date": "2026-05-20", "normalized": 107.31}, {"date": "2026-05-21", "normalized": 107.25}, {"date": "2026-05-22", "normalized": 103.22}, {"date": "2026-05-25", "normalized": 106.51}, {"date": "2026-05-26", "normalized": 103.22}, {"date": "2026-05-27", "normalized": 98.93}, {"date": "2026-05-28", "normalized": 105.84}, {"date": "2026-05-29", "normalized": 104.7}, {"date": "2026-06-01", "normalized": 102.01}, {"date": "2026-06-02", "normalized": 101.21}, {"date": "2026-06-03", "normalized": 99.6}, {"date": "2026-06-04", "normalized": 100.67}, {"date": "2026-06-05", "normalized": 102.01}, {"date": "2026-06-08", "normalized": 98.45}, {"date": "2026-06-09", "normalized": 97.99}, {"date": "2026-06-10", "normalized": 98.52}, {"date": "2026-06-11", "normalized": 96.98}, {"date": "2026-06-12", "normalized": 93.09}, {"date": "2026-06-15", "normalized": 91.34}, {"date": "2026-06-16", "normalized": 91.61}, {"date": "2026-06-17", "normalized": 90.6}, {"date": "2026-06-18", "normalized": 96.91}, {"date": "2026-06-19", "normalized": 97.51}, {"date": "2026-06-22", "normalized": 104.29}, {"date": "2026-06-23", "normalized": 104.7}, {"date": "2026-06-24", "normalized": 107.11}, {"date": "2026-06-25", "normalized": 105.03}, {"date": "2026-06-26", "normalized": 108.73}, {"date": "2026-06-29", "normalized": 104.75}, {"date": "2026-06-30", "normalized": 105.79}, {"date": "2026-07-01", "normalized": 103.63}, {"date": "2026-07-02", "normalized": 104.82}, {"date": "2026-07-03", "normalized": 105.65}, {"date": "2026-07-06", "normalized": 107.39}, {"date": "2026-07-07", "normalized": 104.61}, {"date": "2026-07-08", "normalized": 104.54}, {"date": "2026-07-09", "normalized": 103.63}, {"date": "2026-07-10", "normalized": 102.45}, {"date": "2026-07-13", "normalized": 99.66}, {"date": "2026-07-14", "normalized": 98.13}, {"date": "2026-07-15", "normalized": 94.78}, {"date": "2026-07-16", "normalized": 99.52}, {"date": "2026-07-17", "normalized": 97.92}, {"date": "2026-07-20", "normalized": 95.41}, {"date": "2026-07-21", "normalized": 95.06}, {"date": "2026-07-22", "normalized": 88.44}, {"date": "2026-07-23", "normalized": 91.99}, {"date": "2026-07-24", "normalized": 90.6}, {"date": "2026-07-27", "normalized": 91.3}, {"date": "2026-07-28", "normalized": 91.92}, {"date": "2026-07-29", "normalized": 97.57}, {"date": "2026-07-30", "normalized": 103.07}, {"date": "2026-07-31", "normalized": 103.21}, {"date": "2026-08-03", "normalized": 103.14}, {"date": "2026-08-04", "normalized": 106.56}, {"date": "2026-08-05", "normalized": 53.31}, {"date": "2026-08-06", "normalized": 53.73}, {"date": "2026-08-07", "normalized": 50.87}, {"date": "2026-08-10", "normalized": 49.9}, {"date": "2026-08-11", "normalized": 50.25}, {"date": "2026-08-12", "normalized": 51.43}, {"date": "2026-08-13", "normalized": 50.04}, {"date": "2026-08-14", "normalized": 47.53}, {"date": "2026-08-17", "normalized": 47.53}, {"date": "2026-08-18", "normalized": 48.23}, {"date": "2026-08-19", "normalized": 48.16}, {"date": "2026-08-20", "normalized": 48.44}, {"date": "2026-08-21", "normalized": 49.97}, {"date": "2026-08-24", "normalized": 51.15}, {"date": "2026-08-25", "normalized": 51.29}, {"date": "2026-08-26", "normalized": 51.29}, {"date": "2026-08-27", "normalized": 51.43}, {"date": "2026-08-28", "normalized": 50.87}, {"date": "2026-09-03", "normalized": 51.15}, {"date": "2026-09-04", "normalized": 52.41}, {"date": "2026-09-07", "normalized": 51.92}, {"date": "2026-09-08", "normalized": 51.29}]};
+        const ctx = document.getElementById('perfChart').getContext('2d');
+
+        const datasets = [];
+        const colors = ['#f5576c', '#00f2fe', '#43e97b'];
+        const tickers = ["VIC", "TCB", "VHM"];
+
+        tickers.forEach((ticker, idx) => {
+            if (chartData[ticker]) {
+                datasets.push({
+                    label: ticker,
+                    data: chartData[ticker].map(d => d.normalized),
+                    borderColor: colors[idx],
+                    backgroundColor: colors[idx] + '15',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    pointRadius: 0,
+                    pointHoverRadius: 4
+                });
+            }
+        });
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: chartData[tickers[0]].map(d => d.date),
+                datasets: datasets
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: true, position: 'bottom' },
+                    title: { display: false }
+                },
+                scales: {
+                    y: { beginAtZero: false }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

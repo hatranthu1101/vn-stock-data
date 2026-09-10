@@ -1,0 +1,100 @@
+{
+  "top_3_consider": [
+    "VIC",
+    "TCB",
+    "VHM"
+  ],
+  "mid_watch": [
+    "MSN",
+    "FPT",
+    "MBB",
+    "HPG"
+  ],
+  "bottom_avoid": [
+    "VNM",
+    "VCB",
+    "BID"
+  ],
+  "detailed_scores": {
+    "VIC": {
+      "score": 23.91,
+      "return_30d": 19.71,
+      "volatility": 2.65,
+      "trend": "up",
+      "latest_close": 249.6,
+      "volume_trend": 85.56
+    },
+    "TCB": {
+      "score": 1.36,
+      "return_30d": 1.91,
+      "volatility": 1.84,
+      "trend": "sideway",
+      "latest_close": 31.95,
+      "volume_trend": 66.17
+    },
+    "VHM": {
+      "score": 0.98,
+      "return_30d": 2.79,
+      "volatility": 6.04,
+      "trend": "sideway",
+      "latest_close": 73.6,
+      "volume_trend": 28.53
+    },
+    "MSN": {
+      "score": 0.6,
+      "return_30d": 1.03,
+      "volatility": 1.42,
+      "trend": "sideway",
+      "latest_close": 68.4,
+      "volume_trend": -8.49
+    },
+    "FPT": {
+      "score": 0.01,
+      "return_30d": 0.56,
+      "volatility": 1.83,
+      "trend": "sideway",
+      "latest_close": 72.2,
+      "volume_trend": -27.94
+    },
+    "MBB": {
+      "score": -0.9,
+      "return_30d": -0.25,
+      "volatility": 2.18,
+      "trend": "sideway",
+      "latest_close": 20.15,
+      "volume_trend": -18.13
+    },
+    "HPG": {
+      "score": -1.56,
+      "return_30d": -1.13,
+      "volatility": 1.43,
+      "trend": "sideway",
+      "latest_close": 21.85,
+      "volume_trend": -15.72
+    },
+    "VNM": {
+      "score": -2.14,
+      "return_30d": -1.77,
+      "volatility": 1.23,
+      "trend": "sideway",
+      "latest_close": 61.0,
+      "volume_trend": -30.27
+    },
+    "VCB": {
+      "score": -4.07,
+      "return_30d": -3.65,
+      "volatility": 1.41,
+      "trend": "sideway",
+      "latest_close": 58.1,
+      "volume_trend": -12.47
+    },
+    "BID": {
+      "score": -8.9,
+      "return_30d": -8.35,
+      "volatility": 1.84,
+      "trend": "sideway",
+      "latest_close": 36.2,
+      "volume_trend": -45.49
+    }
+  }
+}
