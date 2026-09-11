@@ -1,95 +1,105 @@
 {
-  "analysis_date": "2026-07-21",
+  "timestamp": "2026-09-09T00:00:00",
   "metrics": {
     "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
+      "return_30d": 8.7,
+      "return_all": -6.53,
+      "volatility": 1.57,
+      "trend": "Tăng",
+      "trend_slope": 0.0743,
+      "volume_trend": 1.1,
+      "last_close": 58.7,
+      "data_points": 30
     },
     "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
-      "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
+      "return_30d": 16.02,
+      "return_all": 15.48,
+      "volatility": 2.54,
+      "trend": "Tăng",
+      "trend_slope": 1.067,
+      "volume_trend": 23.62,
+      "last_close": 247.7,
+      "data_points": 30
     },
     "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
+      "return_30d": -44.96,
+      "return_all": -49.75,
+      "volatility": 9.69,
+      "trend": "Giảm",
+      "trend_slope": -2.4613,
+      "volume_trend": 18.86,
+      "last_close": 72.1,
+      "data_points": 30
     },
     "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
+      "return_30d": 8.35,
+      "return_all": -11.16,
+      "volatility": 1.64,
+      "trend": "Tăng",
+      "trend_slope": 0.0098,
+      "volume_trend": -13.25,
+      "last_close": 22.05,
+      "data_points": 30
     },
     "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
+      "return_30d": 14.69,
+      "return_all": -0.64,
+      "volatility": 2.34,
+      "trend": "Tăng",
+      "trend_slope": 0.1524,
+      "volume_trend": 11.89,
+      "last_close": 32.4,
+      "data_points": 30
     },
     "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
+      "return_30d": -6.7,
+      "return_all": -20.41,
+      "volatility": 3.55,
+      "trend": "Giảm",
+      "trend_slope": -0.104,
+      "volume_trend": -18.95,
+      "last_close": 20.2,
+      "data_points": 30
     },
     "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
-      "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
+      "return_30d": 5.87,
+      "return_all": 2.12,
+      "volatility": 1.47,
+      "trend": "Tăng",
+      "trend_slope": 0.0948,
+      "volume_trend": -40.23,
+      "last_close": 61.3,
+      "data_points": 30
     },
     "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
-      "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
+      "return_30d": 16.4,
+      "return_all": -1.21,
+      "volatility": 1.88,
+      "trend": "Tăng",
+      "trend_slope": 0.2294,
+      "volume_trend": -11.23,
+      "last_close": 72.4,
+      "data_points": 30
     },
     "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
+      "return_30d": 7.04,
+      "return_all": -12.53,
+      "volatility": 1.46,
+      "trend": "Tăng",
+      "trend_slope": 0.1217,
+      "volume_trend": -10.45,
+      "last_close": 68.4,
+      "data_points": 30
     },
     "BID": {
-      "return_30d": -12.3,
-      "return_full": -10.51,
-      "volatility": 1.4,
-      "trend": "down",
-      "volume_trend": 1.62,
-      "latest_close": 36.8,
-      "data_points": 22
+      "return_30d": 4.9,
+      "return_all": -11.48,
+      "volatility": 2.07,
+      "trend": "Giảm",
+      "trend_slope": -0.0288,
+      "volume_trend": -29.43,
+      "last_close": 36.4,
+      "data_points": 30
     }
   }
 }
