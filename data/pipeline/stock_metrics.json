@@ -1,95 +1,102 @@
 {
-  "analysis_date": "2026-07-21",
-  "metrics": {
-    "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
-    },
-    "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
-      "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
-    },
-    "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
-    },
-    "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
-    },
-    "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
-    },
-    "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
-    },
-    "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
-      "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
-    },
-    "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
-      "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
-    },
-    "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
-    },
-    "BID": {
-      "return_30d": -12.3,
-      "return_full": -10.51,
-      "volatility": 1.4,
-      "trend": "down",
-      "volume_trend": 1.62,
-      "latest_close": 36.8,
-      "data_points": 22
-    }
+  "BID": {
+    "return_total": -13.06,
+    "return_30d": -4.03,
+    "volatility": 1.8,
+    "trend": "Sideway",
+    "trend_slope": -0.1221,
+    "volume_trend": 0.56,
+    "latest_close": 35.75,
+    "data_points": 97
+  },
+  "FPT": {
+    "return_total": -1.21,
+    "return_30d": 8.06,
+    "volatility": 1.83,
+    "trend": "Sideway",
+    "trend_slope": 0.0509,
+    "volume_trend": 0.7,
+    "latest_close": 72.4,
+    "data_points": 97
+  },
+  "HPG": {
+    "return_total": -15.79,
+    "return_30d": -4.13,
+    "volatility": 1.43,
+    "trend": "Sideway",
+    "trend_slope": -0.0891,
+    "volume_trend": 0.84,
+    "latest_close": 20.9,
+    "data_points": 97
+  },
+  "MBB": {
+    "return_total": -22.38,
+    "return_30d": -12.44,
+    "volatility": 2.13,
+    "trend": "Sideway",
+    "trend_slope": -0.1506,
+    "volume_trend": 0.89,
+    "latest_close": 19.7,
+    "data_points": 97
+  },
+  "MSN": {
+    "return_total": -14.83,
+    "return_30d": -1.91,
+    "volatility": 1.42,
+    "trend": "Sideway",
+    "trend_slope": -0.3745,
+    "volume_trend": 0.81,
+    "latest_close": 66.6,
+    "data_points": 97
+  },
+  "TCB": {
+    "return_total": -2.33,
+    "return_30d": 8.7,
+    "volatility": 1.82,
+    "trend": "Sideway",
+    "trend_slope": -0.1933,
+    "volume_trend": 0.81,
+    "latest_close": 31.85,
+    "data_points": 97
+  },
+  "VCB": {
+    "return_total": -6.85,
+    "return_30d": 3.54,
+    "volatility": 1.39,
+    "trend": "Sideway",
+    "trend_slope": -0.1618,
+    "volume_trend": 0.73,
+    "latest_close": 58.5,
+    "data_points": 97
+  },
+  "VHM": {
+    "return_total": -50.03,
+    "return_30d": -51.52,
+    "volatility": 5.88,
+    "trend": "Sideway",
+    "trend_slope": -0.2279,
+    "volume_trend": 1.87,
+    "latest_close": 71.7,
+    "data_points": 97
+  },
+  "VIC": {
+    "return_total": 12.54,
+    "return_30d": 9.73,
+    "volatility": 2.59,
+    "trend": "Tăng",
+    "trend_slope": 0.5764,
+    "volume_trend": 1.27,
+    "latest_close": 241.4,
+    "data_points": 97
+  },
+  "VNM": {
+    "return_total": -1.22,
+    "return_30d": -3.1,
+    "volatility": 1.24,
+    "trend": "Sideway",
+    "trend_slope": -0.2733,
+    "volume_trend": 0.71,
+    "latest_close": 59.3,
+    "data_points": 97
   }
 }
