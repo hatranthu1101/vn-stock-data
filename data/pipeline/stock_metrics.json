@@ -1,95 +1,118 @@
 {
-  "analysis_date": "2026-07-21",
-  "metrics": {
-    "VCB": {
-      "return_30d": -7.5,
-      "return_full": -9.71,
-      "volatility": 1.11,
-      "trend": "down",
-      "volume_trend": 15.96,
-      "latest_close": 56.7,
-      "data_points": 22
-    },
+  "latest_date": "2026-09-15",
+  "analysis_date": "2026-09-17",
+  "tickers": {
     "VIC": {
-      "return_30d": -1.14,
-      "return_full": 1.31,
-      "volatility": 1.8,
-      "trend": "down",
-      "volume_trend": 5.85,
-      "latest_close": 217.3,
-      "data_points": 22
-    },
-    "VHM": {
-      "return_30d": -8.85,
-      "return_full": -4.94,
-      "volatility": 2.24,
-      "trend": "down",
-      "volume_trend": -11.41,
-      "latest_close": 136.4,
-      "data_points": 22
-    },
-    "HPG": {
-      "return_30d": -11.86,
-      "return_full": -16.2,
-      "volatility": 1.44,
-      "trend": "down",
-      "volume_trend": 42.83,
-      "latest_close": 20.8,
-      "data_points": 22
-    },
-    "TCB": {
-      "return_30d": -3.56,
-      "return_full": -8.62,
-      "volatility": 1.87,
-      "trend": "down",
-      "volume_trend": -8.47,
-      "latest_close": 29.8,
-      "data_points": 22
-    },
-    "MBB": {
-      "return_30d": -4.82,
-      "return_full": -10.56,
-      "volatility": 1.39,
-      "trend": "down",
-      "volume_trend": 5.44,
-      "latest_close": 22.7,
-      "data_points": 22
-    },
-    "VNM": {
-      "return_30d": 2.93,
-      "return_full": -2.72,
-      "volatility": 1.43,
+      "return_30d": 21.87,
+      "return_full": 12.49,
+      "volatility": 2.4,
       "trend": "up",
-      "volume_trend": 16.93,
-      "latest_close": 58.4,
-      "data_points": 22
+      "volume_trend_pct": -19.06,
+      "latest_close": 241.3,
+      "data_points": 19,
+      "score": 21.846
     },
     "FPT": {
-      "return_30d": -8.22,
-      "return_full": -11.58,
-      "volatility": 1.72,
-      "trend": "down",
-      "volume_trend": 25.0,
-      "latest_close": 64.8,
-      "data_points": 22
+      "return_30d": 5.67,
+      "return_full": -0.81,
+      "volatility": 1.51,
+      "trend": "up",
+      "volume_trend_pct": 9.04,
+      "latest_close": 72.7,
+      "data_points": 19,
+      "score": 5.6549
     },
-    "MSN": {
-      "return_30d": -9.23,
-      "return_full": -17.01,
-      "volatility": 1.26,
-      "trend": "down",
-      "volume_trend": 6.76,
-      "latest_close": 64.9,
-      "data_points": 22
+    "VHM": {
+      "return_30d": 4.69,
+      "return_full": -50.24,
+      "volatility": 1.45,
+      "trend": "up",
+      "volume_trend_pct": 37.48,
+      "latest_close": 71.4,
+      "data_points": 19,
+      "score": 4.6755
+    },
+    "VCB": {
+      "return_30d": 3.09,
+      "return_full": -4.46,
+      "volatility": 1.25,
+      "trend": "up",
+      "volume_trend_pct": 4.28,
+      "latest_close": 60.0,
+      "data_points": 19,
+      "score": 3.0774999999999997
     },
     "BID": {
-      "return_30d": -12.3,
+      "return_30d": 2.51,
       "return_full": -10.51,
-      "volatility": 1.4,
+      "volatility": 1.25,
       "trend": "down",
-      "volume_trend": 1.62,
+      "volume_trend_pct": 4.69,
       "latest_close": 36.8,
-      "data_points": 22
+      "data_points": 19,
+      "score": 2.4974999999999996
+    },
+    "TCB": {
+      "return_30d": 1.26,
+      "return_full": -1.26,
+      "volatility": 2.44,
+      "trend": "up",
+      "volume_trend_pct": -31.02,
+      "latest_close": 32.2,
+      "data_points": 19,
+      "score": 1.2356
+    },
+    "MSN": {
+      "return_30d": 0.75,
+      "return_full": -13.81,
+      "volatility": 1.32,
+      "trend": "down",
+      "volume_trend_pct": -17.81,
+      "latest_close": 67.4,
+      "data_points": 19,
+      "score": 0.7368
+    },
+    "MBB": {
+      "return_30d": 0.5,
+      "return_full": -21.2,
+      "volatility": 1.28,
+      "trend": "down",
+      "volume_trend_pct": 15.4,
+      "latest_close": 20.0,
+      "data_points": 19,
+      "score": 0.4872
+    },
+    "HPG": {
+      "return_30d": 0.0,
+      "return_full": -14.59,
+      "volatility": 1.58,
+      "trend": "up",
+      "volume_trend_pct": -6.42,
+      "latest_close": 21.2,
+      "data_points": 19,
+      "score": -0.0158
+    },
+    "VNM": {
+      "return_30d": -4.02,
+      "return_full": -0.55,
+      "volatility": 1.19,
+      "trend": "down",
+      "volume_trend_pct": -14.38,
+      "latest_close": 59.7,
+      "data_points": 19,
+      "score": -4.031899999999999
     }
-  }
+  },
+  "ranking": [
+    "VIC",
+    "FPT",
+    "VHM",
+    "VCB",
+    "BID",
+    "TCB",
+    "MSN",
+    "MBB",
+    "HPG",
+    "VNM"
+  ]
 }
